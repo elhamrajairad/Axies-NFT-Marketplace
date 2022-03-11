@@ -1,0 +1,39 @@
+#option {
+  min-height: 40%;
+  padding: 7rem 0;
+}
+.option__detailes {
+  flex-basis: 22%;
+  text-align: center;
+  padding: 2rem 0;
+  transition: var(--transiton);
+}
+.option__detailes .deailes--icon {
+  margin-bottom: 1.5rem;
+}
+.deailes--icon i {
+  padding: 1rem 1.5rem;
+  font-size: 3rem;
+  border-radius: 1.5rem;
+}
+.deailes--icon #wallet {
+  background-color: var(--secondary-color);
+}
+.deailes--icon #border {
+  background-color: #46a433;
+}
+.deailes--icon #image {
+  background-color: #9835fb;
+}
+.deailes--icon #bookmark {
+  background-color: #df4949;
+}
+.option__detailes h3 {
+  font-weight: 500;
+  margin: 2rem 0;
+}
+.option__detailes p {
+  opacity: 0.5;
+  font-weight: 400;
+  line-height: 2.5rem;
+}

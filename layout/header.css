@@ -1,0 +1,43 @@
+#header{
+    min-height: 40%;
+    border-bottom: 0.1rem solid #3f3f48;
+}
+.header__navber a::after{
+    font: var(--fa-font-solid);
+    content: "\f107";
+    margin-left: 0.5rem;
+}
+.header__navber a{
+    transition:var(--transition)
+}
+.header__navber a:hover{
+    color: var(--secondary-color);
+}
+.header__navber ul li{
+   display: inline;
+   margin: 0 1rem;
+}
+.header__wallet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__wallet .wallet__btn button{
+background-color: transparent;
+color: var(--light-color);
+border-radius: var(--border-radius);
+border: 1px solid var(--secondary-color);
+margin-left: 2rem;
+transition: var(--transition);
+}
+.header__wallet .wallet__btn button:hover{
+    color: var(--secondary-color);
+    background-color: var(--light-color);
+}
+.theme .btn{
+    background-color: #3f3f48;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}

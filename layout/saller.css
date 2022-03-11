@@ -1,0 +1,36 @@
+#saller {
+  min-height: 40%;
+  padding: 5rem 0;
+}
+#saller .wrapper{
+    margin-bottom: 2.5rem;
+}
+.saller__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 250px;
+}
+.saller__img{
+    position: relative;
+}
+.saller__img img{
+    border-radius: 2.18rem;
+    width: 9rem;
+
+}
+.saller__img i{
+    position: absolute;
+    bottom: 0.5rem;
+    right: -0.5rem;
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+.saller__name h3{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.saller__name p{
+    opacity: 0.8;
+}

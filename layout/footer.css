@@ -1,0 +1,74 @@
+#footer {
+  min-height: 40%;
+  background-color: #000;
+  padding: 5rem 0;
+}
+.footer__logo img {
+  margin-bottom: 2rem;
+}
+.footer__logo p {
+  opacity: 0.5;
+  font-size: 1.3rem;
+}
+#footer h3 {
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+#footer a {
+  font-size: 1.4rem;
+  opacity: 0.8;
+  line-height: 4rem;
+  transition: var(--transition);
+}
+#footer a:hover{
+    color: var(--secondary-color);
+}
+.footer__logo,
+.footer__subscribe,
+.footer__company,
+.footer__resources {
+  align-self: flex-start;
+}
+.footer__subscribe form {
+  border: 2px solid var(--card-color);
+  border-radius: 1.5rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__subscribe input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.footer__subscribe input ::placeholder {
+  color: var(--card-color);
+}
+.footer__subscribe #email__icon {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 0 1rem 1rem 0;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.subscribe__links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.subscribe__links i {
+  background-color: var(--card-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+.subscribe__links i:hover {
+  background-color: var(--secondary-color);
+}
