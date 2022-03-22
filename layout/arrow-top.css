@@ -1,0 +1,19 @@
+.top__btn {
+  position: fixed;
+  top: 90%;
+  background-color: var(--light-color);
+  right: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+.top__btn i {
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
