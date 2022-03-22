@@ -1,0 +1,126 @@
+html {
+  overflow-y: hidden;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__img {
+  background-color: #161d30;
+  display: inline-block;
+  width: 50%;
+  height: 100vh;
+  flex-grow: 1;
+}
+.form__img img {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  opacity: 0.8;
+}
+.form__login {
+  background-color: #292f45;
+  display: inline-block;
+  width: 40%;
+  height: 100vh;
+}
+.form__login--form h1 {
+  font-size: 6rem;
+  line-height: 7rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 30%;
+}
+.form__login--form form {
+  width: 70%;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form label {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+form input {
+  border-radius: 1rem;
+  background-color: transparent;
+  outline: none;
+  padding: 1.5rem 1rem;
+  border: 1px solid rgb(116, 115, 115);
+  color: var(--light-color);
+}
+input::placeholder {
+  font-size: 1.5rem;
+}
+input:focus {
+  border-color: var(--secondary-color);
+}
+form button {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  border: none;
+  outline: none;
+  padding: 1.5rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.form__login--text {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.form__login--text a {
+  color: var(--secondary-color);
+}
+.form__login--text,
+.form__login--line,
+.form__login--socialmedia {
+  text-align: center;
+}
+.form__login--line{
+  position: relative;
+  border-top: 1px solid rgb(121, 119, 119);
+  margin: 2rem auto;
+width: 70%;
+text-align: center;
+}
+.line__text{
+  position: absolute;
+  top: -10px;
+  right: 45%;
+  background-color:#292f45 ;
+  padding: 0 2rem;
+  text-align: center;
+}
+.form__login--socialmedia {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.form__login--socialmedia i {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  font-size: 1.7rem;
+  transition: var(--transition);
+}
+.form__login--socialmedia i:hover{
+  transform: translateY(-0.5rem);
+}
+.form__login--socialmedia .fa-facebook {
+  background-color: #3c599b;
+}
+.form__login--socialmedia .fa-twitter {
+  background-color: #51a8eb;
+}
+.form__login--socialmedia .ri-mail-line {
+  background-color: #eb443b;
+}
+.form__login--socialmedia .ri-github-line {
+  background-color: #4b4a48;
+}

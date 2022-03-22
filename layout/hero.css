@@ -1,5 +1,6 @@
 #hero {
   min-height: 60%;
+  margin-top: 2%;
 }
 .hero__img {
   background-image: url("../axies-images/02_hero/Blob\ Shape.png");
