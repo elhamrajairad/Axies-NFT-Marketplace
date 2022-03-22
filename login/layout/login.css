@@ -35,7 +35,7 @@ main {
 }
 .form__login--form form {
   width: 70%;
-  margin: 4rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
