@@ -84,7 +84,7 @@
   background-color:var(--light-color);
   top: 0;
   right: 0;
-  transition: var(--transition);
+  transition: all 0.3 ease;
 }
 .item:hover >.submenu{
   visibility: visible;
