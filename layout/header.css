@@ -72,3 +72,28 @@
   transform: rotate(223deg);
   border-color: var(--secondary-color);
 }
+/* drop down menu */
+.item{
+  position: relative;
+}
+.submenu{
+  border-radius: 0.5rem;
+  position: absolute;
+  visibility: hidden;
+  background-color:var(--light-color);
+  top: 0;
+  right: 0;
+  transition: var(--transition);
+  opacity: 0;
+}
+.item:hover >.submenu{
+  opacity: 1;
+  transition: var(--transition);
+  visibility: visible;
+  top:200%;
+}
+.sub__item .item__link{
+text-align: center;
+display: block;
+padding: 1rem;
+}
