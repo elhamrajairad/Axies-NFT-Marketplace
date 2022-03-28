@@ -95,3 +95,6 @@
   padding: 1rem;
   color: var(--secondary-color);
 }
+.sub__item .item__link:hover{
+  color: red;
+}
