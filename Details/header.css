@@ -1,0 +1,31 @@
+#header{
+  background-color: transparent;
+}
+.header__color{
+background-color: var(--primary-color);
+}
+.header__detaile{
+  background-image: url("../axies-images/detaile/img_bg_page_title_dark.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__detaile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+  border-top: 1px solid #ccc;
+}
+.header__detaile h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.header__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
