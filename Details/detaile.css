@@ -134,3 +134,6 @@ main {
 .description__btn-bid .btn:hover i{
     color: var(--secondary-color);
 }
+#live{
+  background-color:var(--primary-color);
+}

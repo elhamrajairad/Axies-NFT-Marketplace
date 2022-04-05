@@ -44,11 +44,15 @@
   border-bottom: 1px solid #ebeaea30;
   padding: 1rem;
 }
+.tabcontent__info:last-child{
+  border-bottom: 0;
+}
 .info__avatar {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  margin-right: auto;
 }
 .info__avatar img {
   width: 4rem;
@@ -68,4 +72,12 @@
   font-weight: 400;
   font-size: 1.2rem;
   opacity: 0.6;
+}
+/* scroll */
+#London::-webkit-scrollbar{
+  width: 0.2rem;
+  background-color: var(--dark-color);
+}
+#London::-webkit-scrollbar-thumb{
+  background-color: #ebeaea30;
 }
