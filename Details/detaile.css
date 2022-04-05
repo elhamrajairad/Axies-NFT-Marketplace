@@ -18,6 +18,7 @@ main {
 .details__discription h2 {
   font-size: 3.6rem;
   font-weight: 700;
+  margin-bottom: 2rem;
 }
 .description__rate {
   display: flex;
@@ -47,8 +48,8 @@ main {
 .rate__share div {
   background-color: var(--card-color);
   display: inline-block;
-  width: 36px;
-  height: 36px;
+  width: 3.6rem;
+  height: 3.6rem;
   line-height: 36px;
   border-radius: 50%;
   text-align: center;

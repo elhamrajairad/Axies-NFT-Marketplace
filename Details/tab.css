@@ -16,11 +16,6 @@
   font-size: 1.7rem;
   color: var(--light-color);
 }
-
-/* Change background color of buttons on hover */
-.tab button:active {
-}
-
 /* Create an active/current tablink class */
 .tab button.active {
   border-bottom: 1px solid var(--secondary-color);
@@ -60,7 +55,7 @@
   border-radius: 1rem;
 }
 #London {
-  height: 15rem;
+  height: 20rem;
   overflow-y: scroll;
 }
 .avatar__name h3 {
