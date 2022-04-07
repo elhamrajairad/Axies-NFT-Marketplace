@@ -1,11 +1,12 @@
 #header {
   border-bottom: 0.1rem solid #3f3f48;
-  background-color: var(--primary-color);
+  background-color: transparent;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 100;
+  position: relative;
 }
 #header.sticky {
   background: var(--primary-color);
@@ -59,8 +60,7 @@
   border: 0.1rem solid var(--light-color);
   border-width: 0 0.1rem 0.1rem 0;
   position: absolute;
-  top: 30%;
-  right: 0rem;
+  top: 40%;
   cursor: pointer;
   transform: rotate(45deg);
   transition: var(--transition);
@@ -73,29 +73,50 @@
   border-color: var(--secondary-color);
 }
 /* drop down menu */
-.item {
-  position: relative;
-}
 .submenu {
-  width: 12rem;
-  border-radius: 0.5rem;
-  position: absolute;
   visibility: hidden;
+  position: absolute;
+  top: 100%;
+  white-space: nowrap;
   background-color: var(--light-color);
-  top: 0;
-  right: 0;
-  transition: all 0.3 ease;
+  width: 160px;
+  left: 0;
+  line-height: 5rem;
+  transition: var(--transition);
+  margin-top: 1rem;
+  border-radius: 0.5rem;
 }
+.item {
+  display: inline-block;
+  padding: 1rem;
+}
+.sub__item {
+  width: fit-content;
+}
+.sub__item a {
+  display: block;
+  color: var(--primary-color);
+  position: relative;
+  transition: var(--transition);
+}
+.sub__item a::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  transition: var(--transition);
+}
+a.item__link:hover{
+  transform: translateX(1rem);
+}
+a.item__link:hover::before {
+  width: 1.2rem;
+}
+
 .item:hover > .submenu {
   visibility: visible;
-  top: 100%;
-}
-.sub__item .item__link {
-  text-align: center;
-  display: block;
-  padding: 1rem;
-  color: var(--secondary-color);
-}
-.sub__item .item__link:hover {
-  color: red;
 }
