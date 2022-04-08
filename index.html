@@ -10,6 +10,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="shortcut icon" href="./axies-images/01_header/icon-fav.png" type="image/x-icon">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./layout/animation.css">
     <link rel="stylesheet" href="./layout/shape.css">
     <link rel="stylesheet" href="./layout/main.css">
@@ -163,160 +165,205 @@
                     <h2>Live Auctions</h2>
                     <a href="#">EXPLORE MORE</a>
                 </div>
-                <div class="wrapper">
-
-                    <div class="live__card card">
-                        <div class="card__img">
-                            <img src="./axies-images/03_Live Auctions/card-item8.jpg" alt="live pic 1" />
-                            <div class="card__img--timer">
-                                <i class="fa-solid fa-fire-flame-curved icon"></i>
-                                <span>5 : 23 : 22 : 08</span>
-                            </div>
-                        </div>
-                        <div class="card__title">
-                            <h4>"hamlet contemplates Yourik's..</h4>
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__creator">
-                                <img src="./axies-images/04_Top Seller/avt-1.jpg">
-                                <div class="creator__text">
-                                    <p>Creator</p>
-                                    <h4>SallvadorDall</h4>
+                <div class="wrapper swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="live__card card swiper-slide">
+                            <div class="card__img">
+                                <img src="./axies-images/03_Live Auctions/card-item8.jpg" alt="live pic 1" />
+                                <div class="card__img--timer">
+                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
+                                    <span>5 : 23 : 22 : 08</span>
                                 </div>
                             </div>
-                            <div class="detaile__badge">
-                                <span>BSC</span>
+                            <div class="card__title">
+                                <h4>"hamlet contemplates Yourik's..</h4>
                             </div>
-                        </div>
-                        <div class="card__footer">
-                            <div class="card--footer--left">
-                                <p class="left__p">curent Bid</p>
-                                <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span></p>
-                            </div>
-                            <div class="card--footer--right">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                        <div class="card__hover">
-                            <i class="fa-solid fa-bag-shopping icon"></i>
-                            Plase Bid
-                        </div>
-                    </div>
-                    <div class="live__card card">
-                        <div class="card__img">
-                            <img src="./axies-images/03_Live Auctions/image-box-10.jpg" alt="live pic 1" />
-                            <div class="card__img--timer">
-                                <i class="fa-solid fa-fire-flame-curved icon"></i>
-                                <span>5 : 23 : 22 : 08</span>
-                            </div>
-                        </div>
-                        <div class="card__title">
-                            <h4>"hamlet contemplates Yourik's..</h4>
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__creator">
-                                <img src="./axies-images/04_Top Seller/avt-2.jpg">
-                                <div class="creator__text">
-                                    <p>Creator</p>
-                                    <h4>SallvadorDall</h4>
+                            <div class="card__detaile">
+                                <div class="detaile__creator">
+                                    <img src="./axies-images/04_Top Seller/avt-1.jpg">
+                                    <div class="creator__text">
+                                        <p>Creator</p>
+                                        <h4>SallvadorDall</h4>
+                                    </div>
+                                </div>
+                                <div class="detaile__badge">
+                                    <span>BSC</span>
                                 </div>
                             </div>
-                            <div class="detaile__badge">
-                                <span>BSC</span>
-                            </div>
-                        </div>
-                        <div class="card__footer">
-                            <div class="card--footer--left">
-                                <p class="left__p">curent Bid</p>
-                                <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span></p>
-                            </div>
-                            <div class="card--footer--right">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                        <div class="card__hover">
-                            <i class="fa-solid fa-bag-shopping icon"></i>
-                            Plase Bid
-                        </div>
-                    </div>
-                    <div class="live__card card">
-                        <div class="card__img">
-                            <img src="./axies-images/03_Live Auctions/image-box-11.jpg" alt="live pic 1" />
-                            <div class="card__img--timer">
-                                <i class="fa-solid fa-fire-flame-curved icon"></i>
-                                <span>5 : 23 : 22 : 08</span>
-                            </div>
-                        </div>
-                        <div class="card__title">
-                            <h4>"hamlet contemplates Yourik's..</h4>
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__creator">
-                                <img src="./axies-images/04_Top Seller/avt-3.jpg">
-                                <div class="creator__text">
-                                    <p>Creator</p>
-                                    <h4>SallvadorDall</h4>
+                            <div class="card__footer">
+                                <div class="card--footer--left">
+                                    <p class="left__p">curent Bid</p>
+                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
+                                    </p>
+                                </div>
+                                <div class="card--footer--right">
+                                    <i class="fa-regular fa-heart"></i>
+                                    100
                                 </div>
                             </div>
-                            <div class="detaile__badge">
-                                <span>BSC</span>
+                            <div class="card__hover">
+                                <i class="fa-solid fa-bag-shopping icon"></i>
+                                Plase Bid
                             </div>
                         </div>
-                        <div class="card__footer">
-                            <div class="card--footer--left">
-                                <p class="left__p">curent Bid</p>
-                                <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span></p>
-                            </div>
-                            <div class="card--footer--right">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                        <div class="card__hover">
-                            <i class="fa-solid fa-bag-shopping icon"></i>
-                            Plase Bid
-                        </div>
-                    </div>
-                    <div class="live__card card">
-                        <div class="card__img">
-                            <img src="./axies-images/03_Live Auctions/image-box-21.jpg" alt="live pic 1" />
-                            <div class="card__img--timer">
-                                <i class="fa-solid fa-fire-flame-curved icon"></i>
-                                <span>5 : 23 : 22 : 08</span>
-                            </div>
-                        </div>
-                        <div class="card__title">
-                            <h4>"hamlet contemplates Yourik's..</h4>
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__creator">
-                                <img src="./axies-images/04_Top Seller/avt-4.jpg">
-                                <div class="creator__text">
-                                    <p>Creator</p>
-                                    <h4>SallvadorDall</h4>
+                        <div class="live__card card swiper-slide">
+                            <div class="card__img">
+                                <img src="./axies-images/03_Live Auctions/card-item8.jpg" alt="live pic 1" />
+                                <div class="card__img--timer">
+                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
+                                    <span>5 : 23 : 22 : 08</span>
                                 </div>
                             </div>
-                            <div class="detaile__badge">
-                                <span>BSC</span>
+                            <div class="card__title">
+                                <h4>"hamlet contemplates Yourik's..</h4>
+                            </div>
+                            <div class="card__detaile">
+                                <div class="detaile__creator">
+                                    <img src="./axies-images/04_Top Seller/avt-1.jpg">
+                                    <div class="creator__text">
+                                        <p>Creator</p>
+                                        <h4>SallvadorDall</h4>
+                                    </div>
+                                </div>
+                                <div class="detaile__badge">
+                                    <span>BSC</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card--footer--left">
+                                    <p class="left__p">curent Bid</p>
+                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
+                                    </p>
+                                </div>
+                                <div class="card--footer--right">
+                                    <i class="fa-regular fa-heart"></i>
+                                    100
+                                </div>
+                            </div>
+                            <div class="card__hover">
+                                <i class="fa-solid fa-bag-shopping icon"></i>
+                                Plase Bid
                             </div>
                         </div>
-                        <div class="card__footer">
-                            <div class="card--footer--left">
-                                <p class="left__p">curent Bid</p>
-                                <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span></p>
+                        <div class="live__card card swiper-slide">
+                            <div class="card__img">
+                                <img src="./axies-images/03_Live Auctions/image-box-10.jpg" alt="live pic 1" />
+                                <div class="card__img--timer">
+                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
+                                    <span>5 : 23 : 22 : 08</span>
+                                </div>
                             </div>
-                            <div class="card--footer--right">
-                                <i class="fa-regular fa-heart"></i>
-                                100
+                            <div class="card__title">
+                                <h4>"hamlet contemplates Yourik's..</h4>
+                            </div>
+                            <div class="card__detaile">
+                                <div class="detaile__creator">
+                                    <img src="./axies-images/04_Top Seller/avt-2.jpg">
+                                    <div class="creator__text">
+                                        <p>Creator</p>
+                                        <h4>SallvadorDall</h4>
+                                    </div>
+                                </div>
+                                <div class="detaile__badge">
+                                    <span>BSC</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card--footer--left">
+                                    <p class="left__p">curent Bid</p>
+                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
+                                    </p>
+                                </div>
+                                <div class="card--footer--right">
+                                    <i class="fa-regular fa-heart"></i>
+                                    100
+                                </div>
+                            </div>
+                            <div class="card__hover">
+                                <i class="fa-solid fa-bag-shopping icon"></i>
+                                Plase Bid
                             </div>
                         </div>
-                        <div class="card__hover">
-                            <i class="fa-solid fa-bag-shopping icon"></i>
-                            Plase Bid
+                        <div class="live__card card swiper-slide">
+                            <div class="card__img">
+                                <img src="./axies-images/03_Live Auctions/image-box-11.jpg" alt="live pic 1" />
+                                <div class="card__img--timer">
+                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
+                                    <span>5 : 23 : 22 : 08</span>
+                                </div>
+                            </div>
+                            <div class="card__title">
+                                <h4>"hamlet contemplates Yourik's..</h4>
+                            </div>
+                            <div class="card__detaile">
+                                <div class="detaile__creator">
+                                    <img src="./axies-images/04_Top Seller/avt-3.jpg">
+                                    <div class="creator__text">
+                                        <p>Creator</p>
+                                        <h4>SallvadorDall</h4>
+                                    </div>
+                                </div>
+                                <div class="detaile__badge">
+                                    <span>BSC</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card--footer--left">
+                                    <p class="left__p">curent Bid</p>
+                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
+                                    </p>
+                                </div>
+                                <div class="card--footer--right">
+                                    <i class="fa-regular fa-heart"></i>
+                                    100
+                                </div>
+                            </div>
+                            <div class="card__hover">
+                                <i class="fa-solid fa-bag-shopping icon"></i>
+                                Plase Bid
+                            </div>
+                        </div>
+                        <div class="live__card card swiper-slide">
+                            <div class="card__img">
+                                <img src="./axies-images/03_Live Auctions/image-box-21.jpg" alt="live pic 1" />
+                                <div class="card__img--timer">
+                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
+                                    <span>5 : 23 : 22 : 08</span>
+                                </div>
+                            </div>
+                            <div class="card__title">
+                                <h4>"hamlet contemplates Yourik's..</h4>
+                            </div>
+                            <div class="card__detaile">
+                                <div class="detaile__creator">
+                                    <img src="./axies-images/04_Top Seller/avt-4.jpg">
+                                    <div class="creator__text">
+                                        <p>Creator</p>
+                                        <h4>SallvadorDall</h4>
+                                    </div>
+                                </div>
+                                <div class="detaile__badge">
+                                    <span>BSC</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card--footer--left">
+                                    <p class="left__p">curent Bid</p>
+                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
+                                    </p>
+                                </div>
+                                <div class="card--footer--right">
+                                    <i class="fa-regular fa-heart"></i>
+                                    100
+                                </div>
+                            </div>
+                            <div class="card__hover">
+                                <i class="fa-solid fa-bag-shopping icon"></i>
+                                Plase Bid
+                            </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -532,7 +579,7 @@
                     </button>
                 </div>
                 <div class="wrapper">
-                    <div class="live__card card">
+                    <div class="live__card card swiper-slide">
                         <div class="card__img">
                             <img src="./axies-images/05_Today's Picks/card-item-2.jpg" alt="Piker 1" />
                             <div class="card__img--timer harper__like">
@@ -566,7 +613,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="live__card card">
+                    <div class="live__card card swiper-slide">
                         <div class="card__img">
                             <img src="./axies-images/05_Today's Picks/card-item-3.jpg" alt="Piker 1" />
                             <div class="card__img--timer harper__like">
@@ -600,7 +647,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="live__card card">
+                    <div class="live__card card swiper-slide">
                         <div class="card__img">
                             <img src="./axies-images/05_Today's Picks/card-item-4.jpg" alt="Piker 1" />
                             <div class="card__img--timer harper__like">
@@ -634,7 +681,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="live__card card">
+                    <div class="live__card card swiper-slide">
                         <div class="card__img">
                             <img src="./axies-images/05_Today's Picks/card-item-7.jpg" alt="Piker 1" />
                             <div class="card__img--timer harper__like">
@@ -744,6 +791,27 @@
         <i class="ri-arrow-up-s-line"></i>
     </button>
     <script src="./script/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

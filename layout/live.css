@@ -140,3 +140,10 @@
   border-image:linear-gradient(270deg, rgba(196,80,227,1) 0%, rgba(117,81,230,1) 100%)
     0 0 2 0 repeat repeat;
 }
+/* slider */
+.swiper-slide{
+  width: fit-content!important;
+}
+.pagination{
+ bottom: 0;
+}
