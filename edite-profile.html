@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./axies-images/01_header/icon-fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="./layout/main.css">
+    <link rel="stylesheet" href="./layout/header.css">
+    <link rel="stylesheet" href="./layout/footer.css">
+    <link rel="stylesheet" href="./layout/live.css">
+    <link rel="stylesheet" href="./Details/header.css">
+    <link rel="stylesheet" href="./Details/detaile.css">
+    <link rel="stylesheet" href="./Details/tab.css">
+    <link rel="stylesheet" href="./layout/stiky-socialmedia.css">
+    <link rel="stylesheet" href="./layout/arrow-top.css">
+    <link rel="stylesheet" href="./edite-profile/edite-profile.css">
+
+    <title>Edite profile</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="./axies-images/01_header/logo_dark.png" alt="logo axies" />
+                </div>
+                <div class="header__navber">
+                    <ul id="main">
+                        <li class="item"><a href="/" class="item__link">Home</a></li>
+                        <li class="item"><a href="#" class="item__link">Explore</a></li>
+                        <li class="item"><a href="#" class="item__link">Activity</a></li>
+                        <li class="item"><a href="./Details.html" class="item__link">Community</a> <span
+                                class="link__arrow"></span>
+                            <!-- <ul class="submenu">
+                                <li class="sub__item"><a href="#" class="item__link">community 2</a></li>
+                                <li class="sub__item"><a href="#" class="item__link">community 3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="item"><a href="#" class="item__link">Pages </a><span class="link__arrow"></span>
+                            <!-- <ul class="submenu">
+                                <li class="sub__item"><a href="#" class="item__link">pages 2</a></li>
+                                <li class="sub__item"><a href="#" class="item__link">pages 3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="item"><a href="#" class="item__link">contact</a></li>
+                    </ul>
+                </div>
+                <div class="header__wallet">
+                    <div class="wallet__search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="wallet__btn">
+                        <button type="button" class="btn btn__primary">
+                            <i class="fa-solid fa-wallet icon"></i>
+                            Wallet Connetct
+                        </button>
+                    </div>
+                </div>
+                <div class="theme">
+                    <button type="button" class="btn theme__btn">
+                        <img src="./axies-images/01_header/moon-2.png" alt="theme dark" width="18" />
+                    </button>
+                    <button type="button" class="btn theme__btn">
+                        <img src="./axies-images/01_header/sun.png" alt="theme light" width="18" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header__detaile">
+        <h1>Edite Profile</h1>
+        <div class="header__links">
+            <a href="/">Home</a>/<a href="#">Explore</a>/<a href="#">Edite profile</a>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <section id="pic__profile">
+                    <div class="profile__card">
+                        <img src="./axies-images/avatar/avata_profile.a8b9ea292396d6fac4fd.jpg" alt="avatar img">
+                        <a href="#" target="" rel="noopener noreferrer" class="btn">upload new photo</a>
+                        <a href="#" target="" rel="noopener noreferrer" class="btn">Delete</a>
+                    </div>
+                </section>
+                <section id="detaile__profile">
+                    <div class="profile__cover">
+                        <h2>Choice your Cover image
+                        </h2>
+                        <div class="profile__cover--box">
+                            <div> <a href="#">upload file</a></div>
+                            <div>
+                                <img src="./axies-images/avatar/option1_bg_profile.ed388b8ca316a6f98759.jpg"
+                                    alt="avatar">
+                            </div>
+                            <div>
+                                <img src="./axies-images/avatar/option2_bg_profile.a0809e05fdbbab448888.jpg"
+                                    alt="avatar">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__account">
+                        <div class="account__info">
+                            <h3>Account info</h3>
+                            <form>
+                                <label for="name">Display name</label>
+                                <input type="text" id="name" placeholder="Trista Francis">
+                                <label for="url">Custom URL</label>
+                                <input type="text" id="url" placeholder="Axies.Trista Francis.com/">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Enter Your Email">
+                                <label for="bio">Bio</label>
+                                <textarea id="bio" cols="30" rows="10"></textarea>
+                                <input type="submit" value="Update Profile">
+                            </form>
+                        </div>
+                        <div class="account__social">
+                            <h3>Your Social media</h3>
+                            <div class="social__form">
+                                <form>
+                                    <label for="facebook">Facebook</label>
+                                    <input id="facebook" type="text" placeholder="Facebook username" />
+                                    <button>
+                                        <i class="ri-facebook-circle-fill"></i>
+                                        conecting to Facebook
+                                    </button>
+                                </form>
+                                <form>
+                                    <label for="twitter">Twitter</label>
+                                    <input id="twitter" type="text" placeholder="Twitter username" />
+                                    <button>
+                                        <i class="ri-twitter-fill"></i>
+                                        conecting to Twitter
+                                    </button>
+                                </form>
+                                <form>
+                                    <label for="discord">Discord</label>
+                                    <input id="discord" type="text" placeholder="Discord username" />
+                                    <button>
+                                        <i class="ri-discord-fill"></i>
+                                        conecting to Discord
+                                    </button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="wrapper">
+                <div class="footer__logo">
+                    <img src="./axies-images/01_header/logo_dark.png" alt="logo axies" />
+                    <p>Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit. Nunc non adipiscing
+                        <br />consectetur
+                        phasellus nunc nunc vel.
+                    </p>
+                </div>
+                <div class="footer__account">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="#">Authors</a></li>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Author Profile</a></li>
+                        <li><a href="#">Create Item</a></li>
+                    </ul>
+                </div>
+                <div class="footer__resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Live Auctions</a></li>
+                        <li><a href="#">Item Details</a></li>
+                        <li><a href="#">Activity</a></li>
+                    </ul>
+                </div>
+                <div class="footer__company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3>Subscribe Us</h3>
+                    <form>
+                        <input type="text" placeholder="info@yourgmail.com" />
+                        <i class="fa-solid fa-envelope " id="email__icon"></i>
+                    </form>
+                    <div class="subscribe__links">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="stiky__socialmedia">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-solid fa-paper-plane"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-discord"></i>
+        <a href="./login/login.html" style="margin-top: 0.5rem;">
+            <i class="ri-login-circle-line"> </i>
+        </a>
+
+    </div>
+    <button class="top__btn" onclick="topFunction()" id="myBtn">
+        <i class="ri-arrow-up-s-line"></i>
+    </button>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
