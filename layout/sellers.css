@@ -1,0 +1,42 @@
+@import "./buttons.css";
+@import "./colors.css";
+@import "./header.css";
+@import "./reset.css";
+@import "./utility.css";
+#sellers {
+  max-height: 30%;
+  margin-top: 10rem;
+}
+.sellers__gride {
+  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.seller__avatar {
+  position: relative;
+}
+.seller:hover .seller__avatar img {
+  border-radius: 50%;
+  filter: sepia(100%);
+}
+.seller__avatar img {
+  width: 8rem;
+  border-radius: var(--border-radius-lg);
+  transition: var(--transition);
+}
+.seller__avatar i {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 0rem;
+  right: 0;
+}
+.seller__name .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.seller__name .price {
+  font-weight: 600;
+}

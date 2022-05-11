@@ -5,814 +5,980 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./axies-images/01_header/icon-fav.png" type="image/x-icon">
-    <!-- Link Swiper's CSS -->
+    <link rel="shortcut icon" href="./images/header/favicon-32x32.png" type="image/x-icon">
+    <!-- Link Swiper's CSS - start -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./layout/animation.css">
-    <link rel="stylesheet" href="./layout/shape.css">
-    <link rel="stylesheet" href="./layout/main.css">
+    <!-- Link Swiper's CSS - end -->
+    <!-- icon links - start -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- icon links - end -->
+    <!-- links styles - start -->
     <link rel="stylesheet" href="./layout/header.css">
     <link rel="stylesheet" href="./layout/hero.css">
-    <link rel="stylesheet" href="./layout/option.css">
-    <link rel="stylesheet" href="./layout/live.css">
+    <link rel="stylesheet" href="./layout/feature.css">
+    <link rel="stylesheet" href="./layout/auctions.css">
     <link rel="stylesheet" href="./layout/popular.css">
-    <link rel="stylesheet" href="./layout/saller.css">
-    <link rel="stylesheet" href="./layout/harper.css">
+    <link rel="stylesheet" href="./layout/sellers.css">
+    <link rel="stylesheet" href="./layout/picks.css">
     <link rel="stylesheet" href="./layout/footer.css">
-    <link rel="stylesheet" href="./layout/stiky-socialmedia.css">
-    <link rel="stylesheet" href="./layout/arrow-top.css">
+    <link rel="stylesheet" href="./layout/top-button.css">
+    <!-- links styles - end -->
     <title>Axies NFT Marketplace</title>
 </head>
 
 <body>
     <header id="header">
         <div class="container">
-            <div class="wrapper">
-                <div class="logo">
-                    <img src="./axies-images/01_header/logo_dark.png" alt="logo axies" />
+            <div class="header flex flex-direction-row justify-content-space-between">
+                <div class="header__logo">
+                    <img src="./images/header/logo_dark.png" alt="logo">
                 </div>
-                <div class="header__navber">
-                    <ul id="navbar">
-                        <li class="item"><a href="/" class="item__link">Home</a></li>
-                        <li class="item"><a href="./Details.html" class="item__link">Explore</a></li>
-                        <li class="item"><a href="#" class="item__link">Activity</a></li>
-                        <li class="item"><a href="#" class="item__link">Community</a> <span class="link__arrow"></span>
+                <div class="header__nav">
+                    <ul class="navbar flex flex-direction-row justify-content-space-around">
+                        <li class="navbar__item item"><a class="navbar__links" href="#">Home <span></span></a></li>
+                        <li class="navbar__item item"><a class="navbar__links" href="#">Explore <span></span></a></li>
+                        <li class="navbar__item item"><a class="navbar__links" href="#">Activity <span></span></a></li>
+                        <li class="navbar__item item"><a class="navbar__links" href="#">Community <span></span></a></li>
+                        <li class="navbar__item item"><a class="navbar__links" href="#">Pages <span></span></a>
                             <ul class="submenu">
-                                <li class="sub__item"><a href="#" class="item__link">community 1</a></li>
-                                <li class="sub__item"><a href="#" class="item__link">community 2</a></li>
+                                <li class="subitem"><a href="./pages/login.html">log in</a></li>
+                                <li class="subitem"><a href="./pages/login.html">Item</a></li>
+                                <li class="subitem"><a href="./pages/login.html">Edit</a></li>
                             </ul>
                         </li>
-                        <li class="item"><a href="#" class="item__link">Pages </a><span class="link__arrow"></span>
-                            <ul class="submenu">
-                                <li class="sub__item"><a href="./edite-profile.html" class="item__link">Edite
-                                        Profile</a></li>
-                                <li class="sub__item"><a href="#" class="item__link">page 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="item"><a href="#" class="item__link">contact</a></li>
+                        <li class="navbar__item"><a class="navbar__links" href="#">Contact <span></span></a></li>
                     </ul>
                 </div>
                 <div class="header__wallet">
-                    <div class="wallet__search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="wallet__btn">
-                        <button type="button" class="btn btn__primary">
-                            <i class="fa-solid fa-wallet icon"></i>
-                            Wallet Connetct
+                    <div class="wallet__items flex flex-direction-row justify-content-space-around gap-2">
+                        <i class="ri-search-2-line"></i>
+                        <button class="btn">
+                            Wallet connect
                         </button>
                     </div>
                 </div>
-                <div class="theme">
-                    <button type="button" class="btn theme__btn">
-                        <img src="./axies-images/01_header/moon-2.png" alt="theme dark" width="18" />
-                    </button>
-                    <button type="button" class="btn theme__btn">
-                        <img src="./axies-images/01_header/sun.png" alt="theme light" width="18" />
-                    </button>
+                <div class="header__changeThem">
+                    <i class="ri-sun-line"></i>
                 </div>
             </div>
         </div>
     </header>
+    <section id="hero">
+        <div class="container">
+            <div class="hero flex flex-direction-row justify-content-space-between">
+                <div class="hero__text">
+                    <h1>Discover, find,<br />
+                        Sell extraordinary<br /> Monster NFTs</h1>
+                    <p>Marketplace for monster character cllections non fungible token NFTs</p>
+                    <div class="hero__buttons flex flex-direction-row justify-content-start gap-2">
+                        <button class="btn">
+                            <i class="ri-send-plane-fill"></i>
+                            Explore
+                        </button>
+                        <button class="btn">
+                            <i class="ri-stack-fill"></i>
+                            Create
+                        </button>
+                    </div>
+                </div>
+                <div class="hero__img">
+                    <img src="./images/hero/Blob Shape.png" alt="blob shape">
+                    <img src="./images/hero/imgslider2.png" alt="image slider">
+                    <img src="./images/hero/image 2.svg" alt="imaage slider">
+                    <img src="./images/hero/Blur Pattern.png" alt="imaage slider">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                    <div class="circle circle-5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feature">
+        <div class="container gride gap-3">
+            <div class="feature">
+                <div class="feature__icon">
+                    <i class="ri-wallet-2-line"></i>
+                </div>
+                <h2 class="feature__title">Set Up Your Wallet</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra posuere in vestibulum volutpat. Ut
+                    pharetra morbi sit.</p>
+            </div>
+            <div class="feature">
+                <div class="feature__icon">
+                    <i class="ri-layout-masonry-line"></i>
+                </div>
+                <h2 class="feature__title">Create Your Collection</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra posuere in vestibulum volutpat. Ut
+                    pharetra morbi sit.</p>
+            </div>
+            <div class="feature">
+                <div class="feature__icon">
+                    <i class="ri-image-2-line"></i>
+                </div>
+                <h2 class="feature__title">Add Your NFTs</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra posuere in vestibulum volutpat. Ut
+                    pharetra morbi sit.</p>
+            </div>
+            <div class="feature">
+                <div class="feature__icon">
+                    <i class="ri-bookmark-2-line"></i>
+                </div>
+                <h2 class="feature__title">List Them For Sale</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra posuere in vestibulum volutpat. Ut
+                    pharetra morbi sit.</p>
+            </div>
+        </div>
+    </section>
     <main>
-        <section id="hero">
+        <section id="auctions">
             <div class="container">
-                <div class="wrapper">
-                    <div class="hero__text">
-                        <h1>Discover, and collect<br />
-                            extraordinary<br />
-                            <span id="hero__text--gradiant">Monster</span> NFTs
-                        </h1>
-                        <p>There are many variations of passages of Lorem Ipsum available</p>
-                        <div class="hero__text--btn">
-                            <button type="button" class="btn btn__primary">
-                                <i class="fa-solid fa-rocket icon"></i>
-                                Explore</button>
-                            <button type="button" class="btn btn__primary">
-                                <i class="fa-solid fa-clone icon"></i>
-                                Create</button>
-                        </div>
+                <div class="auctions">
+                    <div class="Live auctions__heading flex flex-direction-row justify-content-space-between">
+                        <h2 class="heading">Live Auctions</h2>
+                        <a href="#">EXPLORE MORE</a>
                     </div>
-                    <div class="hero__img">
-                        <img src="./axies-images/02_hero/imgslider2.png" alt="hero image" width="300px"
-                            id="img__white--pic" />
-                        <img src="./axies-images/02_hero/image 2.svg" alt="hero image" id="img__blue--pic" />
-                        <div class="circle" id="circle__one"></div>
-                        <div class="hold__circle" id="hold__circle__one">
-                            <img src="./axies-images/02_hero/Star 1.svg" alt="star" width="15px" />
-                        </div>
-                        <div class="circle" id="circle__two"></div>
-                        <div class="circle" id="circle__three"></div>
-                        <div class="circle" id="circle__four"></div>
-                        <div id="plus__one">
-                            <img src="./axies-images/02_hero/plus.png" alt="plus" />
-                        </div>
-                        <div id="plus__two">
-                            <img src="./axies-images/02_hero/plus.png" alt="plus" />
-                        </div>
-                        <div id="plus__three">
-                            <img src="./axies-images/02_hero/plus.png" alt="plus" />
-                        </div>
-                        <img src="./axies-images/02_hero/Star 1.svg" alt="star" class="star" id="star___three" />
-                        <img src="./axies-images/02_hero/Star 1.svg" alt="star" class="star" id="star___four" />
-                        <img src="./axies-images/02_hero/Star 1.svg" alt="star" class="star" id="star___two" />
-                        <img src="./axies-images/02_hero/Star 1.svg" alt="star" class="star" id="star___five" />
-                        <img src="./axies-images/02_hero/Star 1.svg" alt="star" class="star" id="star___six" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="option">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="option__detailes">
-                        <div class="deailes--icon">
-                            <i class="ri-wallet-3-fill" id="wallet"></i>
-                        </div>
-                        <h3>Set Up Your Wallet</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius inventore modi</p>
-                    </div>
-                    <div class="option__detailes">
-                        <div class="deailes--icon">
-                            <i class="ri-layout-masonry-fill" id="border"></i>
-                        </div>
-                        <h3>Create Your Collection</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius inventore modi</p>
-                    </div>
-                    <div class="option__detailes">
-                        <div class="deailes--icon">
-                            <i class="ri-image-line" id="image"></i>
-                        </div>
-                        <h3>Add Your NFTs</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius inventore modi</p>
-                    </div>
-                    <div class="option__detailes">
-                        <div class="deailes--icon">
-                            <i class="ri-bookmark-2-fill" id="bookmark"></i>
-                        </div>
-                        <h3>List Them For Sale</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius inventore modi</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="live">
-            <div class="container">
-                <div class="live__text title">
-                    <h2>Live Auctions</h2>
-                    <a href="#">EXPLORE MORE</a>
-                </div>
-                <div class="wrapper swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="live__card card swiper-slide">
-                            <div class="card__img">
-                                <img src="./axies-images/03_Live Auctions/card-item8.jpg" alt="live pic 1" />
-                                <div class="card__img--timer">
-                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
-                                    <span>5 : 23 : 22 : 08</span>
-                                </div>
-                            </div>
-                            <div class="card__title">
-                                <h4>"hamlet contemplates Yourik's..</h4>
-                            </div>
-                            <div class="card__detaile">
-                                <div class="detaile__creator">
-                                    <img src="./axies-images/04_Top Seller/avt-1.jpg">
-                                    <div class="creator__text">
-                                        <p>Creator</p>
-                                        <h4>SallvadorDall</h4>
+                    <div class="swiper mySwiper">
+                        <div class="auctions__cards  swiper-wrapper">
+                            <a href="#"
+                                class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                                <div class="card__img">
+                                    <img src="./images/Live Auctions/card-item8.jpg" alt="card">
+                                    <span class="card__img__like card__tag">
+                                        <i class="ri-heart-line"></i>
+                                        <span>100</span>
+                                    </span>
+                                    <span class="card__img__timer card__tag">
+                                        <i class="ri-fire-fill"></i>
+                                        <span>12 : 12 : 12</span>
+                                    </span>
+                                    <div class='card__img__hover'>
+                                        <i class="ri-shopping-bag-fill"></i>
+                                        <span>Place Bid</span>
                                     </div>
                                 </div>
-                                <div class="detaile__badge">
-                                    <span>BSC</span>
+                                <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                    <h3>"Triumphant Awakening Contemplates"</h3>
                                 </div>
-                            </div>
-                            <div class="card__footer">
-                                <div class="card--footer--left">
-                                    <p class="left__p">curent Bid</p>
-                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
-                                    </p>
+                                <div class="card__body flex flex-direction-row justify-content-space-between">
+                                    <div class="card__body__profile">
+                                        <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                            <img src="./images/Top Seller/avt-1.jpg" alt="saller">
+                                            <div class="avatar flex flex-direction-column">
+                                                <span>creator</span>
+                                                <span>Trista Francis</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__body__bsc">BSC</div>
                                 </div>
-                                <div class="card--footer--right">
-                                    <i class="fa-regular fa-heart"></i>
-                                    100
-                                </div>
-                            </div>
-                            <div class="card__hover">
-                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                Plase Bid
-                            </div>
-                        </div>
-                        <div class="live__card card swiper-slide">
-                            <div class="card__img">
-                                <img src="./axies-images/03_Live Auctions/card-item8.jpg" alt="live pic 1" />
-                                <div class="card__img--timer">
-                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
-                                    <span>5 : 23 : 22 : 08</span>
-                                </div>
-                            </div>
-                            <div class="card__title">
-                                <h4>"hamlet contemplates Yourik's..</h4>
-                            </div>
-                            <div class="card__detaile">
-                                <div class="detaile__creator">
-                                    <img src="./axies-images/04_Top Seller/avt-1.jpg">
-                                    <div class="creator__text">
-                                        <p>Creator</p>
-                                        <h4>SallvadorDall</h4>
+                                <div class="card__footer flex justify-content-space-between">
+                                    <div class="card__footer__price">
+                                        <p>current Bid</p>
+                                        <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                    </div>
+                                    <div class="card__footer__like">
+                                        <i class="ri-heart-line"></i>
+                                        22
                                     </div>
                                 </div>
-                                <div class="detaile__badge">
-                                    <span>BSC</span>
-                                </div>
-                            </div>
-                            <div class="card__footer">
-                                <div class="card--footer--left">
-                                    <p class="left__p">curent Bid</p>
-                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
-                                    </p>
-                                </div>
-                                <div class="card--footer--right">
-                                    <i class="fa-regular fa-heart"></i>
-                                    100
-                                </div>
-                            </div>
-                            <div class="card__hover">
-                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                Plase Bid
-                            </div>
-                        </div>
-                        <div class="live__card card swiper-slide">
-                            <div class="card__img">
-                                <img src="./axies-images/03_Live Auctions/image-box-10.jpg" alt="live pic 1" />
-                                <div class="card__img--timer">
-                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
-                                    <span>5 : 23 : 22 : 08</span>
-                                </div>
-                            </div>
-                            <div class="card__title">
-                                <h4>"hamlet contemplates Yourik's..</h4>
-                            </div>
-                            <div class="card__detaile">
-                                <div class="detaile__creator">
-                                    <img src="./axies-images/04_Top Seller/avt-2.jpg">
-                                    <div class="creator__text">
-                                        <p>Creator</p>
-                                        <h4>SallvadorDall</h4>
+                            </a>
+                            <a href="#"
+                                class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                                <div class="card__img">
+                                    <img src="./images/Live Auctions/image-box-10.jpg" alt="card">
+                                    <span class="card__img__like card__tag">
+                                        <i class="ri-heart-line"></i>
+                                        <span>100</span>
+                                    </span>
+                                    <span class="card__img__timer card__tag">
+                                        <i class="ri-fire-fill"></i>
+                                        <span>12 : 12 : 12</span>
+                                    </span>
+                                    <div class='card__img__hover'>
+                                        <i class="ri-shopping-bag-fill"></i>
+                                        <span>Place Bid</span>
                                     </div>
                                 </div>
-                                <div class="detaile__badge">
-                                    <span>BSC</span>
+                                <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                    <h3>"Triumphant Awakening Contemplates"</h3>
                                 </div>
-                            </div>
-                            <div class="card__footer">
-                                <div class="card--footer--left">
-                                    <p class="left__p">curent Bid</p>
-                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
-                                    </p>
+                                <div class="card__body flex flex-direction-row justify-content-space-between">
+                                    <div class="card__body__profile">
+                                        <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                            <img src="./images/Top Seller/avt-2.jpg" alt="saller">
+                                            <div class="avatar flex flex-direction-column">
+                                                <span>creator</span>
+                                                <span>SalvadorDali</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__body__bsc">BSC</div>
                                 </div>
-                                <div class="card--footer--right">
-                                    <i class="fa-regular fa-heart"></i>
-                                    100
-                                </div>
-                            </div>
-                            <div class="card__hover">
-                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                Plase Bid
-                            </div>
-                        </div>
-                        <div class="live__card card swiper-slide">
-                            <div class="card__img">
-                                <img src="./axies-images/03_Live Auctions/image-box-11.jpg" alt="live pic 1" />
-                                <div class="card__img--timer">
-                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
-                                    <span>5 : 23 : 22 : 08</span>
-                                </div>
-                            </div>
-                            <div class="card__title">
-                                <h4>"hamlet contemplates Yourik's..</h4>
-                            </div>
-                            <div class="card__detaile">
-                                <div class="detaile__creator">
-                                    <img src="./axies-images/04_Top Seller/avt-3.jpg">
-                                    <div class="creator__text">
-                                        <p>Creator</p>
-                                        <h4>SallvadorDall</h4>
+                                <div class="card__footer flex justify-content-space-between">
+                                    <div class="card__footer__price">
+                                        <p>current Bid</p>
+                                        <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                    </div>
+                                    <div class="card__footer__like">
+                                        <i class="ri-heart-line"></i>
+                                        22
                                     </div>
                                 </div>
-                                <div class="detaile__badge">
-                                    <span>BSC</span>
-                                </div>
-                            </div>
-                            <div class="card__footer">
-                                <div class="card--footer--left">
-                                    <p class="left__p">curent Bid</p>
-                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
-                                    </p>
-                                </div>
-                                <div class="card--footer--right">
-                                    <i class="fa-regular fa-heart"></i>
-                                    100
-                                </div>
-                            </div>
-                            <div class="card__hover">
-                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                Plase Bid
-                            </div>
-                        </div>
-                        <div class="live__card card swiper-slide">
-                            <div class="card__img">
-                                <img src="./axies-images/03_Live Auctions/image-box-21.jpg" alt="live pic 1" />
-                                <div class="card__img--timer">
-                                    <i class="fa-solid fa-fire-flame-curved icon"></i>
-                                    <span>5 : 23 : 22 : 08</span>
-                                </div>
-                            </div>
-                            <div class="card__title">
-                                <h4>"hamlet contemplates Yourik's..</h4>
-                            </div>
-                            <div class="card__detaile">
-                                <div class="detaile__creator">
-                                    <img src="./axies-images/04_Top Seller/avt-4.jpg">
-                                    <div class="creator__text">
-                                        <p>Creator</p>
-                                        <h4>SallvadorDall</h4>
+                            </a>
+                            <a href="#"
+                                class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                                <div class="card__img">
+                                    <img src="./images/Live Auctions/image-box-11.jpg" alt="card">
+                                    <span class="card__img__like card__tag">
+                                        <i class="ri-heart-line"></i>
+                                        <span>100</span>
+                                    </span>
+                                    <span class="card__img__timer card__tag">
+                                        <i class="ri-fire-fill"></i>
+                                        <span>12 : 12 : 12</span>
+                                    </span>
+                                    <div class='card__img__hover'>
+                                        <i class="ri-shopping-bag-fill"></i>
+                                        <span>Place Bid</span>
                                     </div>
                                 </div>
-                                <div class="detaile__badge">
-                                    <span>BSC</span>
+                                <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                    <h3>"Living Vase 01 by Lanza Contemplates"</h3>
                                 </div>
-                            </div>
-                            <div class="card__footer">
-                                <div class="card--footer--left">
-                                    <p class="left__p">curent Bid</p>
-                                    <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span>
-                                    </p>
+                                <div class="card__body flex flex-direction-row justify-content-space-between">
+                                    <div class="card__body__profile">
+                                        <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                            <img src="./images/Top Seller/avt-3.jpg" alt="saller">
+                                            <div class="avatar flex flex-direction-column">
+                                                <span>creator</span>
+                                                <span>Freddie Carpenter</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__body__bsc">BSC</div>
                                 </div>
-                                <div class="card--footer--right">
-                                    <i class="fa-regular fa-heart"></i>
-                                    100
+                                <div class="card__footer flex justify-content-space-between">
+                                    <div class="card__footer__price">
+                                        <p>current Bid</p>
+                                        <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                    </div>
+                                    <div class="card__footer__like">
+                                        <i class="ri-heart-line"></i>
+                                        22
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card__hover">
-                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                Plase Bid
-                            </div>
+                            </a>
+                            <a href="#"
+                                class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                                <div class="card__img">
+                                    <img src="./images/Live Auctions/image-box-21.jpg" alt="card">
+                                    <span class="card__img__like card__tag">
+                                        <i class="ri-heart-line"></i>
+                                        <span>100</span>
+                                    </span>
+                                    <span class="card__img__timer card__tag">
+                                        <i class="ri-fire-fill"></i>
+                                        <span>12 : 12 : 12</span>
+                                    </span>
+                                    <div class='card__img__hover'>
+                                        <i class="ri-shopping-bag-fill"></i>
+                                        <span>Place Bid</span>
+                                    </div>
+                                </div>
+                                <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                    <h3>"Flame Dress' by Balmain Contemplates "</h3>
+                                </div>
+                                <div class="card__body flex flex-direction-row justify-content-space-between">
+                                    <div class="card__body__profile">
+                                        <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                            <img src="./images/Top Seller/avt-4.jpg" alt="saller">
+                                            <div class="avatar flex flex-direction-column">
+                                                <span>creator</span>
+                                                <span>Tyler Covington</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__body__bsc">BSC</div>
+                                </div>
+                                <div class="card__footer flex justify-content-space-between">
+                                    <div class="card__footer__price">
+                                        <p>current Bid</p>
+                                        <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                    </div>
+                                    <div class="card__footer__like">
+                                        <i class="ri-heart-line"></i>
+                                        22
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                                <div class="card__img">
+                                    <img src="./images/Live Auctions/card-item-11.b852cb3ac79476a86817.jpg" alt="card">
+                                    <span class="card__img__like card__tag">
+                                        <i class="ri-heart-line"></i>
+                                        <span>100</span>
+                                    </span>
+                                    <span class="card__img__timer card__tag">
+                                        <i class="ri-fire-fill"></i>
+                                        <span>12 : 12 : 12</span>
+                                    </span>
+                                    <div class='card__img__hover'>
+                                        <i class="ri-shopping-bag-fill"></i>
+                                        <span>Place Bid</span>
+                                    </div>
+                                </div>
+                                <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                    <h3>"Hamlet Contemplates Contemplates "</h3>
+                                </div>
+                                <div class="card__body flex flex-direction-row justify-content-space-between">
+                                    <div class="card__body__profile">
+                                        <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                            <img src="./images/Top Seller/avt-5.jpg" alt="saller">
+                                            <div class="avatar flex flex-direction-column">
+                                                <span>creator</span>
+                                                <span>SalvadorDali</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__body__bsc">BSC</div>
+                                </div>
+                                <div class="card__footer flex justify-content-space-between">
+                                    <div class="card__footer__price">
+                                        <p>current Bid</p>
+                                        <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                    </div>
+                                    <div class="card__footer__like">
+                                        <i class="ri-heart-line"></i>
+                                        22
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                                <div class="card__img">
+                                    <img src="./images/Live Auctions/image-box-42.gif" alt="card">
+                                    <span class="card__img__like card__tag">
+                                        <i class="ri-heart-line"></i>
+                                        <span>100</span>
+                                    </span>
+                                    <span class="card__img__timer card__tag">
+                                        <i class="ri-fire-fill"></i>
+                                        <span>12 : 12 : 12</span>
+                                    </span>
+                                    <div class='card__img__hover'>
+                                        <i class="ri-shopping-bag-fill"></i>
+                                        <span>Place Bid</span>
+                                    </div>
+                                </div>
+                                <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                    <h3>"Krypto Queen"</h3>
+                                </div>
+                                <div class="card__body flex flex-direction-row justify-content-space-between">
+                                    <div class="card__body__profile">
+                                        <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                            <img src="./images/Top Seller/avt-5.jpg" alt="saller">
+                                            <div class="avatar flex flex-direction-column">
+                                                <span>creator</span>
+                                                <span>Krypto Queen</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__body__bsc">BSC</div>
+                                </div>
+                                <div class="card__footer flex justify-content-space-between">
+                                    <div class="card__footer__price">
+                                        <p>current Bid</p>
+                                        <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                    </div>
+                                    <div class="card__footer__like">
+                                        <i class="ri-heart-line"></i>
+                                        22
+                                    </div>
+                                </div>
+                            </a>
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
         <section id="popular">
             <div class="container">
-                <div class="live__text title">
-                    <h2>Popular Collection</h2>
-                    <a href="#">EXPLORE MORE</a>
+                <div class="popular">
+                    <div class="popular popular__heading flex flex-direction-row justify-content-space-between">
+                        <h2 class="heading">Popular Collection</h2>
+                        <a href="#">EXPLORE MORE</a>
+                    </div>
+                    <div class="popular__cards gride gap-3">
+                        <div class="popular__card flex flex-direction-column justify-content-space-between">
+                            <div class="popular__card__imges gride gap-1">
+                                <img src="./images/Popular Collection/box1/1.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box1/2.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box1/3.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box1/4.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box1/5.jpg" alt="collection">
+                            </div>
+                            <div class="popular__card__footer flex flex-direction-row gap-1">
+                                <div class="popular__card__footer__avatar">
+                                    <img src="./images/Top Seller/avt-5.jpg" alt="saller">
+                                </div>
+                                <div class="popular__card__footer__name flex flex-direction-column ">
+                                    <p>Creative Art Collection</p>
+                                    <p><span>Created by</span> Relph Garraway</p>
+                                </div>
+                                <div class="popular__card__footer__tag">
+                                    <i class="ri-heart-line" style="margin-right: 2px;"></i>22
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__card flex flex-direction-column justify-content-space-between">
+                            <div class="popular__card__imges gride gap-1">
+                                <img src="./images/Popular Collection/box2/1.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box2/2.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box2/3.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box2/4.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box2/5.jpg" alt="collection">
+                            </div>
+                            <div class="popular__card__footer flex flex-direction-row gap-1">
+                                <div class="popular__card__footer__avatar">
+                                    <img src="./images/Top Seller/avt-3.jpg" alt="saller">
+                                </div>
+                                <div class="popular__card__footer__name flex flex-direction-column ">
+                                    <p>Dreamy Imaginations</p>
+                                    <p><span>Created by</span>Leonardo da Vinci</p>
+                                </div>
+                                <div class="popular__card__footer__tag">
+                                    <i class="ri-heart-line" style="margin-right: 2px;"></i>22
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular__card flex flex-direction-column justify-content-space-between">
+                            <div class="popular__card__imges gride gap-1">
+                                <img src="./images/Popular Collection/box3/1.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box3/2.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box3/3.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box3/4.jpg" alt="collection">
+                                <img src="./images/Popular Collection/box3/5.jpg" alt="collection">
+                            </div>
+                            <div class="popular__card__footer flex flex-direction-row gap-1">
+                                <div class="popular__card__footer__avatar">
+                                    <img src="./images/Top Seller/avt-2.jpg" alt="saller">
+                                </div>
+                                <div class="popular__card__footer__name flex flex-direction-column ">
+                                    <p>Mountain of Clouds</p>
+                                    <p><span>Created by</span>Michelangelo</p>
+                                </div>
+                                <div class="popular__card__footer__tag">
+                                    <i class="ri-heart-line" style="margin-right: 2px;"></i>22
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="wrapper">
-                    <div class="popular__card card">
-                        <div class="card__img">
-                            <img src="./axies-images/box/box-1.png" alt="popular collection 1" />
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__avatar">
-                                <div class="avatar__img">
-                                    <img src="./axies-images/04_Top Seller/avt-1.jpg" alt="avatar 1" width="62" />
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                                <div class="avatar__text">
-                                    <h3>Creative Art Collection</h3>
-                                    <p><span>Created by</span> Relph Garraway</p>
-                                </div>
-                            </div>
-                            <div class="detaile__like">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular__card card">
-                        <div class="card__img">
-                            <img src="./axies-images/box/box-2.png" alt="popular collection 1" />
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__avatar">
-                                <div class="avatar__img">
-                                    <img src="./axies-images/04_Top Seller/avt-2.jpg" alt="avatar 1" width="62" />
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                                <div class="avatar__text">
-                                    <h3>Creative Art Collection</h3>
-                                    <p><span>Created by</span> Relph Garraway</p>
-                                </div>
-                            </div>
-                            <div class="detaile__like">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular__card card">
-                        <div class="card__img">
-                            <img src="./axies-images/box/box-3.png" alt="popular collection 1" />
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__avatar">
-                                <div class="avatar__img">
-                                    <img src="./axies-images/04_Top Seller/avt-3.jpg" alt="avatar 1" width="62" />
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </div>
-                                <div class="avatar__text">
-                                    <h3>Creative Art Collection</h3>
-                                    <p><span>Created by</span> Relph Garraway</p>
-                                </div>
-                            </div>
-                            <div class="detaile__like">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
-        <section id="saller">
+        <section id="sellers">
             <div class="container">
-                <div class="live__text title">
-                    <h2>Top Seller</h2>
-                </div>
-                <div class="wrapper">
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-1.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
+                <div class="sellers">
+                    <h2 class="heading">Top Seller</h2>
+                    <div class="sellers__gride gride">
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-1.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Crispin Berry</p>
+                                <p class="price">214.2 ETH</p>
+                            </div>
                         </div>
-                        <div class="saller__name">
-                            <h3>Crispin Berry</h3>
-                            <p>214.2 ETH</p>
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-2.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Anil Evelin</p>
+                                <p class="price">590.0 ETH</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-2.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-3.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Teofilo Salwa</p>
+                                <p class="price">318.1 ETH</p>
+                            </div>
                         </div>
-                        <div class="saller__name">
-                            <h3>Windsor Lane</h3>
-                            <p>214.2 ETH</p>
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-4.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Juozapas Davion</p>
+                                <p class="price">752.5 ETH</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-3.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-5.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Rambert Rosa</p>
+                                <p class="price">97.9 ETH</p>
+                            </div>
                         </div>
-                        <div class="saller__name">
-                            <h3>Windsor Lane</h3>
-                            <p>214.2 ETH</p>
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-6.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Vishnu Gruffudd</p>
+                                <p class="price">514.0 ETH</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-4.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-7.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Kyrilu Tor</p>
+                                <p class="price">200.7 ETH</p>
+                            </div>
                         </div>
-                        <div class="saller__name">
-                            <h3>Blake Banks</h3>
-                            <p>214.2 ETH</p>
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-8.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Sigurður Finnley</p>
+                                <p class="price">475.7 ETH</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-5.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-9.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Abessalom Stine</p>
+                                <p class="price">103.3 ETH</p>
+                            </div>
                         </div>
-                        <div class="saller__name">
-                            <h3>Matt Ramos</h3>
-                            <p>214.2 ETH</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-6.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div class="saller__name">
-                            <h3>Crispin Berry</h3>
-                            <p>214.2 ETH</p>
-                        </div>
-                    </div>
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-7.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div class="saller__name">
-                            <h3>Harper Wilcher</h3>
-                            <p>214.2 ETH</p>
-                        </div>
-                    </div>
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-8.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div class="saller__name">
-                            <h3>Monica Lucas</h3>
-                            <p>214.2 ETH</p>
-                        </div>
-                    </div>
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-9.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div class="saller__name">
-                            <h3>Andy Hurlbutt</h3>
-                            <p>214.2 ETH</p>
-                        </div>
-                    </div>
-                    <div class="saller__box">
-                        <div class="saller__img">
-                            <img src="./axies-images/04_Top Seller/avt-3.jpg" alt="saller 1" />
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <div class="saller__name">
-                            <h3>Tommy Alvarez</h3>
-                            <p>214.2 ETH</p>
+                        <div class="seller flex flex-direction-row justify-content-start  gap-1">
+                            <div class="seller__avatar">
+                                <img src="./images/Top Seller/avt-10.jpg" alt="seller">
+                                <i class="ri-checkbox-circle-fill"></i>
+                            </div>
+                            <div class="seller__name">
+                                <p class="title">Mar Bernhard</p>
+                                <p class="price">52.1 ETH</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="Harper">
+        <section id="picks">
             <div class="container">
-                <div class="Harper__text title">
-                    <h2>Today’s Picks</h2>
-                    <a href="#">EXPLORE MORE</a>
+                <div class="picks">
+                    <div class="picks picks__heading flex flex-direction-row justify-content-space-between">
+                        <h2 class="heading">Today's Picks</h2>
+                        <a href="#">EXPLORE MORE</a>
+                    </div>
+                    <div class="picks__cards gride gap-3">
+                        <a href="#" class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                            <div class="card__img">
+                                <img src="./images/Today's Picks/1.jpg" alt="Picks">
+                                <span class="card__img__like card__tag">
+                                    <i class="ri-heart-line"></i>
+                                    <span>100</span>
+                                </span>
+                                <div class='card__img__hover'>
+                                    <i class="ri-shopping-bag-fill"></i>
+                                    <span>Place Bid</span>
+                                </div>
+                            </div>
+                            <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                <h3>“Lion Police Dept”</h3>
+                            </div>
+                            <div class="card__body flex flex-direction-row justify-content-space-between">
+                                <div class="card__body__profile">
+                                    <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                        <img src="./images/Top Seller/avt-2.jpg" alt="saller">
+                                        <div class="avatar flex flex-direction-column">
+                                            <span>creator</span>
+                                            <span>Antoni Gaudí</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body__bsc">BSC</div>
+                            </div>
+                            <div class="card__footer flex justify-content-space-between">
+                                <div class="card__footer__price">
+                                    <p>current Bid</p>
+                                    <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                </div>
+                                <div class="card__footer__like">
+                                    <i class="ri-history-line"></i>
+                                    view history
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                            <div class="card__img">
+                                <img src="./images/Today's Picks/3.jpg" alt="Picks">
+                                <span class="card__img__like card__tag">
+                                    <i class="ri-heart-line"></i>
+                                    <span>100</span>
+                                </span>
+                                <div class='card__img__hover'>
+                                    <i class="ri-shopping-bag-fill"></i>
+                                    <span>Place Bid</span>
+                                </div>
+                            </div>
+                            <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                <h3>“Blizz Blizzard”</h3>
+                            </div>
+                            <div class="card__body flex flex-direction-row justify-content-space-between">
+                                <div class="card__body__profile">
+                                    <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                        <img src="./images/Top Seller/avt-4.jpg" alt="saller">
+                                        <div class="avatar flex flex-direction-column">
+                                            <span>creator</span>
+                                            <span>Gala Dali</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body__bsc">BSC</div>
+                            </div>
+                            <div class="card__footer flex justify-content-space-between">
+                                <div class="card__footer__price">
+                                    <p>current Bid</p>
+                                    <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                </div>
+                                <div class="card__footer__like">
+                                    <i class="ri-history-line"></i>
+                                    view history
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                            <div class="card__img">
+                                <img src="./images/Today's Picks/4.jpg" alt="Picks">
+                                <span class="card__img__like card__tag">
+                                    <i class="ri-heart-line"></i>
+                                    <span>100</span>
+                                </span>
+                                <div class='card__img__hover'>
+                                    <i class="ri-shopping-bag-fill"></i>
+                                    <span>Place Bid</span>
+                                </div>
+                            </div>
+                            <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                <h3>“Krypto Queen”</h3>
+                            </div>
+                            <div class="card__body flex flex-direction-row justify-content-space-between">
+                                <div class="card__body__profile">
+                                    <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                        <img src="./images/Top Seller/avt-5.jpg" alt="saller">
+                                        <div class="avatar flex flex-direction-column">
+                                            <span>creator</span>
+                                            <span>
+                                                Luis Buñuel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body__bsc">BSC</div>
+                            </div>
+                            <div class="card__footer flex justify-content-space-between">
+                                <div class="card__footer__price">
+                                    <p>current Bid</p>
+                                    <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                </div>
+                                <div class="card__footer__like">
+                                    <i class="ri-history-line"></i>
+                                    view history
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                            <div class="card__img">
+                                <img src="./images/Today's Picks/5.jpg" alt="Picks">
+                                <span class="card__img__like card__tag">
+                                    <i class="ri-heart-line"></i>
+                                    <span>100</span>
+                                </span>
+                                <div class='card__img__hover'>
+                                    <i class="ri-shopping-bag-fill"></i>
+                                    <span>Place Bid</span>
+                                </div>
+                            </div>
+                            <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                <h3>“The Binary Girl”</h3>
+                            </div>
+                            <div class="card__body flex flex-direction-row justify-content-space-between">
+                                <div class="card__body__profile">
+                                    <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                        <img src="./images/Top Seller/avt-9.jpg" alt="saller">
+                                        <div class="avatar flex flex-direction-column">
+                                            <span>creator</span>
+                                            <span>Paul Cézanne</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body__bsc">BSC</div>
+                            </div>
+                            <div class="card__footer flex justify-content-space-between">
+                                <div class="card__footer__price">
+                                    <p>current Bid</p>
+                                    <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                </div>
+                                <div class="card__footer__like">
+                                    <i class="ri-history-line"></i>
+                                    view history
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                            <div class="card__img">
+                                <img src="./images/Today's Picks/6.jpg" alt="Picks">
+                                <span class="card__img__like card__tag">
+                                    <i class="ri-heart-line"></i>
+                                    <span>100</span>
+                                </span>
+                                <div class='card__img__hover'>
+                                    <i class="ri-shopping-bag-fill"></i>
+                                    <span>Place Bid</span>
+                                </div>
+                            </div>
+                            <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                <h3>“Gears of Dungeon”</h3>
+                            </div>
+                            <div class="card__body flex flex-direction-row justify-content-space-between">
+                                <div class="card__body__profile">
+                                    <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                        <img src="./images/Top Seller/avt-8.jpg" alt="saller">
+                                        <div class="avatar flex flex-direction-column">
+                                            <span>creator</span>
+                                            <span>Rembrandt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body__bsc">BSC</div>
+                            </div>
+                            <div class="card__footer flex justify-content-space-between">
+                                <div class="card__footer__price">
+                                    <p>current Bid</p>
+                                    <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                </div>
+                                <div class="card__footer__like">
+                                    <i class="ri-history-line"></i>
+                                    view history
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                            <div class="card__img">
+                                <img src="./images/Today's Picks/7.jpg" alt="Picks">
+                                <span class="card__img__like card__tag">
+                                    <i class="ri-heart-line"></i>
+                                    <span>100</span>
+                                </span>
+                                <div class='card__img__hover'>
+                                    <i class="ri-shopping-bag-fill"></i>
+                                    <span>Place Bid</span>
+                                </div>
+                            </div>
+                            <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                <h3>“Hamlet Contemplates Yorick’s Memories”</h3>
+                            </div>
+                            <div class="card__body flex flex-direction-row justify-content-space-between">
+                                <div class="card__body__profile">
+                                    <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                        <img src="./images/Top Seller/avt-7.jpg" alt="saller">
+                                        <div class="avatar flex flex-direction-column">
+                                            <span>creator</span>
+                                            <span>Salvador Dali</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body__bsc">BSC</div>
+                            </div>
+                            <div class="card__footer flex justify-content-space-between">
+                                <div class="card__footer__price">
+                                    <p>current Bid</p>
+                                    <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                </div>
+                                <div class="card__footer__like">
+                                    <i class="ri-history-line"></i>
+                                    view history
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                            <div class="card__img">
+                                <img src="./images/Today's Picks/8.jpg" alt="Picks">
+                                <span class="card__img__like card__tag">
+                                    <i class="ri-heart-line"></i>
+                                    <span>100</span>
+                                </span>
+                                <div class='card__img__hover'>
+                                    <i class="ri-shopping-bag-fill"></i>
+                                    <span>Place Bid</span>
+                                </div>
+                            </div>
+                            <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                <h3>“Enthusiastic Elephants”</h3>
+                            </div>
+                            <div class="card__body flex flex-direction-row justify-content-space-between">
+                                <div class="card__body__profile">
+                                    <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                        <img src="./images/Top Seller/avt-6.jpg" alt="saller">
+                                        <div class="avatar flex flex-direction-column">
+                                            <span>creator</span>
+                                            <span>Joan Miró</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body__bsc">BSC</div>
+                            </div>
+                            <div class="card__footer flex justify-content-space-between">
+                                <div class="card__footer__price">
+                                    <p>current Bid</p>
+                                    <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                </div>
+                                <div class="card__footer__like">
+                                    <i class="ri-history-line"></i>
+                                    view history
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="card flex flex-direction-column justify-content-space-between swiper-slide">
+                            <div class="card__img">
+                                <img src="./images/Today's Picks/9.jpg" alt="Picks">
+                                <span class="card__img__like card__tag">
+                                    <i class="ri-heart-line"></i>
+                                    <span>100</span>
+                                </span>
+                                <div class='card__img__hover'>
+                                    <i class="ri-shopping-bag-fill"></i>
+                                    <span>Place Bid</span>
+                                </div>
+                            </div>
+                            <div class="card__title flex flex-direction-row justify-content-space-between gap-1">
+                                <h3>“
+                                    Dreamy Imaginations”</h3>
+                            </div>
+                            <div class="card__body flex flex-direction-row justify-content-space-between">
+                                <div class="card__body__profile">
+                                    <div class="card__body__profile__avatar flex flex-direction-row gap-1">
+                                        <img src="./images/Top Seller/avt-10.jpg" alt="saller">
+                                        <div class="avatar flex flex-direction-column">
+                                            <span>creator</span>
+                                            <span>“Hamlet Bosch</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body__bsc">BSC</div>
+                            </div>
+                            <div class="card__footer flex justify-content-space-between">
+                                <div class="card__footer__price">
+                                    <p>current Bid</p>
+                                    <p><span class="ETH">4.89ETH</span> <span class="price"> = $12.249</span></p>
+                                </div>
+                                <div class="card__footer__like">
+                                    <i class="ri-history-line"></i>
+                                    view history
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <button class="btn__secondary load" id="loadmore">Load more</button>
                 </div>
-                <div class="harper__category">
-                    <button type="button" class="btn btn__primary">
-                        <i class="ri-layout-grid-fill icon"></i> Category
-                    </button>
-                    <button type="button" class="btn btn__primary">
-                        <i class="fa-solid fa-dollar-sign icon"></i>
-                        Prise range
-                    </button>
-                    <button type="button" class="btn btn__primary">
-                        <i class="ri-flashlight-fill icon"></i> Sale type
-                    </button>
-                    <button type="button" class="btn btn__primary">
-                        <i class="fa-solid fa-cube icon"></i>
-                        Blockchain
-                    </button>
-                    <button type="button" class="btn btn__primary" id="btn__category">
-                        <i class="fa-solid fa-filter icon"></i>
-                        Sort By: Recently Added
-                    </button>
-                </div>
-                <div class="wrapper">
-                    <div class="live__card card swiper-slide">
-                        <div class="card__img">
-                            <img src="./axies-images/05_Today's Picks/card-item-2.jpg" alt="Piker 1" />
-                            <div class="card__img--timer harper__like">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                        <div class="card__title">
-                            <h4>"hamlet contemplates Yourik's..</h4>
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__creator">
-                                <img src="./axies-images/04_Top Seller/avt-1.jpg">
-                                <div class="creator__text">
-                                    <p>Creator</p>
-                                    <h4>SallvadorDall</h4>
-                                </div>
-                            </div>
-                            <div class="detaile__badge">
-                                <span>BSC</span>
-                            </div>
-                        </div>
-                        <div class="card__footer">
-                            <div class="card--footer--left">
-                                <p class="left__p">curent Bid</p>
-                                <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span></p>
-                            </div>
-                            <div class="card--footer--right">
-                                <i class="fa-solid fa-arrows-rotate"></i>
-                                View history
-                            </div>
-                        </div>
-                    </div>
-                    <div class="live__card card swiper-slide">
-                        <div class="card__img">
-                            <img src="./axies-images/05_Today's Picks/card-item-3.jpg" alt="Piker 1" />
-                            <div class="card__img--timer harper__like">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                        <div class="card__title">
-                            <h4>"hamlet contemplates Yourik's..</h4>
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__creator">
-                                <img src="./axies-images/04_Top Seller/avt-1.jpg">
-                                <div class="creator__text">
-                                    <p>Creator</p>
-                                    <h4>SallvadorDall</h4>
-                                </div>
-                            </div>
-                            <div class="detaile__badge">
-                                <span>BSC</span>
-                            </div>
-                        </div>
-                        <div class="card__footer">
-                            <div class="card--footer--left">
-                                <p class="left__p">curent Bid</p>
-                                <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span></p>
-                            </div>
-                            <div class="card--footer--right">
-                                <i class="fa-solid fa-arrows-rotate"></i>
-                                View history
-                            </div>
-                        </div>
-                    </div>
-                    <div class="live__card card swiper-slide">
-                        <div class="card__img">
-                            <img src="./axies-images/05_Today's Picks/card-item-4.jpg" alt="Piker 1" />
-                            <div class="card__img--timer harper__like">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                        <div class="card__title">
-                            <h4>"hamlet contemplates Yourik's..</h4>
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__creator">
-                                <img src="./axies-images/04_Top Seller/avt-1.jpg">
-                                <div class="creator__text">
-                                    <p>Creator</p>
-                                    <h4>SallvadorDall</h4>
-                                </div>
-                            </div>
-                            <div class="detaile__badge">
-                                <span>BSC</span>
-                            </div>
-                        </div>
-                        <div class="card__footer">
-                            <div class="card--footer--left">
-                                <p class="left__p">curent Bid</p>
-                                <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span></p>
-                            </div>
-                            <div class="card--footer--right">
-                                <i class="fa-solid fa-arrows-rotate"></i>
-                                View history
-                            </div>
-                        </div>
-                    </div>
-                    <div class="live__card card swiper-slide">
-                        <div class="card__img">
-                            <img src="./axies-images/05_Today's Picks/card-item-7.jpg" alt="Piker 1" />
-                            <div class="card__img--timer harper__like">
-                                <i class="fa-regular fa-heart"></i>
-                                100
-                            </div>
-                        </div>
-                        <div class="card__title">
-                            <h4>"hamlet contemplates Yourik's..</h4>
-                        </div>
-                        <div class="card__detaile">
-                            <div class="detaile__creator">
-                                <img src="./axies-images/04_Top Seller/avt-1.jpg">
-                                <div class="creator__text">
-                                    <p>Creator</p>
-                                    <h4>SallvadorDall</h4>
-                                </div>
-                            </div>
-                            <div class="detaile__badge">
-                                <span>BSC</span>
-                            </div>
-                        </div>
-                        <div class="card__footer">
-                            <div class="card--footer--left">
-                                <p class="left__p">curent Bid</p>
-                                <p><span class="left__eth">4.89 ETH </span><span class="right__eth">=$12.246</span></p>
-                            </div>
-                            <div class="card--footer--right">
-                                <i class="fa-solid fa-arrows-rotate"></i>
-                                View history
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button type="button" class="btn btn__primary harper__btn">Load More</button>
             </div>
         </section>
-    </main>
-    <footer id="footer">
-        <div class="container">
-            <div class="wrapper">
-                <div class="footer__logo">
-                    <img src="./axies-images/01_header/logo_dark.png" alt="logo axies" />
-                    <p>Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit. Nunc non adipiscing
-                        <br />consectetur
-                        phasellus nunc nunc vel.
-                    </p>
-                </div>
-                <div class="footer__account">
-                    <h3>My Account</h3>
-                    <ul>
-                        <li><a href="#">Authors</a></li>
-                        <li><a href="#">Collection</a></li>
-                        <li><a href="#">Author Profile</a></li>
-                        <li><a href="#">Create Item</a></li>
-                    </ul>
-                </div>
-                <div class="footer__resources">
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="#">Help & Support</a></li>
-                        <li><a href="#">Live Auctions</a></li>
-                        <li><a href="#">Item Details</a></li>
-                        <li><a href="#">Activity</a></li>
-                    </ul>
-                </div>
-                <div class="footer__company">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#">Explore</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Our Blog</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer__subscribe">
-                    <h3>Subscribe Us</h3>
-                    <form>
-                        <input type="text" placeholder="info@yourgmail.com" />
-                        <i class="fa-solid fa-envelope " id="email__icon"></i>
-                    </form>
-                    <div class="subscribe__links">
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-discord"></i>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer gride gap-3">
+                    <div class="footer__logo">
+                        <img src="./images/header/logo_dark.png" alt="Axies logo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non adipiscing consectetur
+                            phasellus nunc nunc vel.</p>
+                    </div>
+                    <div class="footer__account">
+                        <h4 class="footer__header">My Account</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Authors</a></li>
+                            <li><a href="#">Collection</a></li>
+                            <li><a href="#">Authors Profile</a></li>
+                            <li><a href="#">Create Item</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__resources">
+                        <h4 class="footer__header">Resources</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Live Autctions</a></li>
+                            <li><a href="#">Item Details</a></li>
+                            <li><a href="#">Activity</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__company">
+                        <h4 class="footer__header">Company</h4>
+                        <ul class="footer__links">
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Our Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__subscribe">
+                        <h4 class="footer__header">Company</h4>
+                        <form class="flex flex-direction-row justify-content-space-between">
+                            <input type="email" id="emai" placeholder="Enter Your Email">
+                            <button><i class="ri-send-plane-fill"></i></button>
+                        </form>
+                        <div class="footer__social flex flex-direction-row justify-content-start gap-1">
+                            <i class="ri-twitter-fill"></i>
+                            <i class="ri-facebook-fill"></i>
+                            <i class="ri-send-plane-fill"></i>
+                            <i class="ri-youtube-fill"></i>
+                            <i class="ri-instagram-fill"></i>
+                            <i class="ri-discord-fill"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <div class="stiky__socialmedia">
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-solid fa-paper-plane"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-discord"></i>
-        <a href="./login/login.html" style="margin-top: 0.5rem;">
-            <i class="ri-login-circle-line"> </i>
+        </footer>
+        <a href="#">
+            <div id="top__btn">
+                <i class="ri-arrow-up-s-line"></i>
+            </div>
         </a>
+        <div class="social__stiky flex flex-direction-column">
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-send-plane-fill"></i>
+            <i class="ri-youtube-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-discord-fill"></i>
+        </div>
 
-    </div>
-    <button class="top__btn" onclick="topFunction()" id="myBtn">
-        <i class="ri-arrow-up-s-line"></i>
-    </button>
-    <script src="./script/script.js"></script>
-    <!-- Swiper JS -->
+    </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            spaceBetween: 10,
-            slidesPerGroup: 1,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    <script src="./script/slider.js"></script>
 </body>
 
 </html>

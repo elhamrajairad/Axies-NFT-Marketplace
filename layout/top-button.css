@@ -1,0 +1,38 @@
+@import "./buttons.css";
+@import "./colors.css";
+@import "./header.css";
+@import "./reset.css";
+@import "./utility.css";
+@import "./animation.css";
+
+#top__btn {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  padding: 0.8%;
+  position: fixed;
+  bottom: 10rem;
+  right: 2rem;
+}
+#top__btn i {
+  font-size: 2rem;
+}
+
+.social__stiky {
+  position: fixed;
+  z-index: 3;
+  background-color: var(--card-color);
+  bottom: 30rem;
+  padding: 0.6%;
+  border-radius: var(--border-radius-lg);
+  left: 2rem;
+  box-shadow: 0 0rem 1rem 0.1rem var(--primary-color);
+}
+.social__stiky i {
+  font-size: 2rem;
+  margin: 1rem 0;
+  transition: var(--transition);
+}
+.social__stiky i:hover {
+  color: var(--primary-color);
+  transform: rotate(100deg) scale(1.1);
+}

@@ -1,56 +1,100 @@
+@import "./buttons.css";
+@import "./colors.css";
+@import "./header.css";
+@import "./reset.css";
+@import "./utility.css";
+@import "./animation.css";
+
 #hero {
-  min-height: 60%;
-  margin-top: 2%;
+  min-height: 45%;
 }
-.hero__img {
-  background-image: url("../axies-images/02_hero/Blob\ Shape.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  flex-grow: 1;
+.hero {
+  align-items: flex-start !important;
   padding: 5rem 0;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#img__white--pic {
-  float: right;
-  transition: var(--transition);
-  animation: myAnim 2s ease 0s infinite normal ;
-}
-#img__blue--pic {
-  float: none;
-  position: absolute;
-  bottom: 7rem;
-  left: 15%;
-  opacity: 0.9;
-  animation: myAnim 2s ease 0s infinite normal ;
 }
 .hero__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
+  margin-top: 7rem;
 }
 .hero__text h1 {
-  font-size: 6rem;
-  margin-bottom: 2rem;
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 8rem;
 }
 .hero__text p {
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
-  opacity: 0.8;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 2rem 0;
 }
-#hero__text--gradiant {
-  background-image: linear-gradient(
-    180deg,
-    rgba(196, 80, 227, 1) 0%,
-    rgba(117, 81, 230, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.hero__img {
+  position: relative;
 }
-.hero__text button:first-child {
-  margin-right: 1.5rem;
+#hero > div > div > div.hero__img > img:nth-child(1) {
+  animation: myAnim 7s infinite;
+  position: absolute;
+  right: 0;
+}
+#hero > div > div > div.hero__img > img:nth-child(2) {
+  animation: myAnim 4s infinite;
+  position: absolute;
+  right: 10rem;
+}
+#hero > div > div > div.hero__img > img:nth-child(3) {
+  animation: myAnim 6s infinite;
+  position: absolute;
+  right: 34rem;
+  bottom: 0;
+  top: 38rem;
+}
+#hero > div > div > div.hero__img > img:nth-child(4) {
+  animation: myAnim 6s infinite;
+  position: absolute;
+  right: -9rem;
+  bottom: 0;
+  top: 35rem;
+}
+/* circle animation */
+.circle {
+  position: absolute;
+  top: 27px;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  animation: circle 3s infinite;
+}
+.circle-1{
+  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+}
+.circle-2 {
+  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+  top: 5rem;
+  width: 2rem;
+  height: 2rem;
+  right: 51rem;
+  animation: circle 4s infinite;
+}
+.circle-3 {
+  background-color: transparent;
+  border: 0.3rem solid #e250e5;
+  top: 8rem;
+  width: 5rem;
+  height: 5rem;
+  right: 77rem;
+  animation: circle 5s infinite;
+}
+.circle-4 {
+  background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+  top: 38rem;
+  width: 3rem;
+  height: 3rem;
+  right: 97rem;
+  animation: circle 5s infinite;
+}
+.circle-5 {
+  border: 0.3rem solid #e250e5;
+  background: transparent;
+  top: 34rem;
+  width: 2rem;
+  height: 2rem;
+  right: 63rem;
+  animation: circle 5s infinite;
 }

@@ -1,0 +1,53 @@
+@import "./buttons.css";
+@import "./colors.css";
+@import "./header.css";
+@import "./reset.css";
+@import "./utility.css";
+
+#picks {
+  max-height: 30%;
+  margin-top: 10rem;
+  text-align: center;
+}
+.picks__cards {
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+}
+.picks__cards .card{
+  display: none;
+}
+.picks__cards .card:nth-child(1){
+  display: inherit;
+}
+.picks__cards .card:nth-child(2){
+  display: inherit;
+}
+.picks__cards .card:nth-child(3){
+  display: inherit;
+}
+.picks__cards .card:nth-child(4){
+  display: inherit;
+}
+.picks__cards .card__footer__like {
+  background-color: transparent;
+}
+.btn__secondary {
+  background-color: transparent;
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+  padding: 1.3rem 2rem;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.7rem;
+  outline: none;
+  border-radius: var(--border-radius-xlg);
+  vertical-align: baseline;
+}
+.btn__secondary:hover {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  box-shadow: none;
+}
+.load {
+  margin-top: 5%;
+}

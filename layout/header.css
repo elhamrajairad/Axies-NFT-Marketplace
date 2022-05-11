@@ -1,122 +1,79 @@
+@import "./buttons.css";
+@import "./colors.css";
+@import "./reset.css";
+@import "./utility.css";
 #header {
-  border-bottom: 0.1rem solid #3f3f48;
-  background-color: transparent;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 100;
-  position: relative;
+  min-height: 20%;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray-color);
 }
-#header.sticky {
-  background: var(--primary-color);
-  position: fixed;
-  top: 0;
-  transition: all 2s ease;
-  z-index: 999;
+.navbar li {
+  margin: 0 2rem;
 }
-.header__navber a:hover,
-.link__arrow:hover {
-  color: var(--secondary-color);
-}
-.header__navber ul li {
-  display: inline;
-  position: relative;
-}
-
-.item__link {
-  padding: 0 1.5rem;
-  font-weight: 500;
-}
-.header__wallet {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.header__wallet .wallet__btn button {
-  background-color: transparent;
+.navbar li a {
   color: var(--light-color);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--secondary-color);
-  margin-left: 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 2rem 0.5rem;
   transition: var(--transition);
 }
-.header__wallet .wallet__btn button:hover {
-  color: var(--secondary-color);
-  background-color: var(--light-color);
+.navbar li a:hover {
+  color: var(--primary-color);
 }
-.theme .btn {
-  background-color: #3f3f48;
-  padding: 0.6rem 1rem;
-  text-align: center;
-  border-radius: 1rem;
+.navbar__item {
+  position: relative;
 }
-
-.link__arrow {
+.navbar__links span {
+  position: absolute;
+  top: 30%;
+  right: -1.5rem;
   content: "";
   width: 0.7rem;
   height: 0.7rem;
-  border: 0.1rem solid var(--light-color);
-  border-width: 0 0.1rem 0.1rem 0;
-  position: absolute;
-  top: 40%;
-  cursor: pointer;
-  transform: rotate(45deg);
+  border: 2px solid var(--light-color);
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(317deg);
   transition: var(--transition);
 }
-.item:hover {
-  color: var(--secondary-color);
+.navbar__links:hover span {
+  border-color: var(--primary-color);
+  transform: rotate(132deg);
 }
-.item:hover .link__arrow {
-  transform: rotate(223deg);
-  border-color: var(--secondary-color);
+.ri-search-2-line,
+.header__changeThem {
+  color: var(--light-color);
 }
-/* drop down menu */
-.submenu {
-  visibility: hidden;
-  position: absolute;
-  top: 100%;
-  white-space: nowrap;
-  background-color: var(--light-color);
-  width: 160px;
-  left: 0;
-  line-height: 5rem;
-  transition: var(--transition);
-  margin-top: 1rem;
-  border-radius: 0.5rem;
-}
-.item {
-  display: inline-block;
-  padding: 1rem;
-}
-.sub__item {
-  width: fit-content;
-}
-.sub__item a {
+.header__changeThem i {
   display: block;
-  color: var(--primary-color);
+  background-color: var(--gray-color);
+  padding: 1rem;
+  border-radius: var(--border-radius-s);
+  font-size: 1.7rem;
+}
+.header__changeThem i:hover {
+  background-color: var(--primary-color);
+}
+/* submenu */
+.item {
   position: relative;
-  transition: var(--transition);
 }
-.sub__item a::before {
+.submenu {
   position: absolute;
-  top: 50%;
-  left: 0;
-  content: "";
-  width: 0;
-  height: 0.3rem;
-  display: inline-block;
-  background-color: var(--secondary-color);
+  width: 20rem;
+  top: 3rem;
+  left: -1rem;
+  background-color: var(--card-color);
+  border-bottom-left-radius: var(--border-radius-xs);
+  border-bottom-right-radius: var(--border-radius-xs);
+  display: none;
   transition: var(--transition);
 }
-a.item__link:hover{
-  transform: translateX(1rem);
+.submenu li a{
+  display: block;
+  width: 100%;
+  padding:1rem 0.5rem;
 }
-a.item__link:hover::before {
-  width: 1.2rem;
-}
-
-.item:hover > .submenu {
-  visibility: visible;
+.item:hover >.submenu{
+  display: block;
 }

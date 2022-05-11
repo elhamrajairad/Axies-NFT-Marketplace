@@ -1,74 +1,83 @@
+@import "./buttons.css";
+@import "./colors.css";
+@import "./header.css";
+@import "./reset.css";
+@import "./utility.css";
+
 #footer {
-  min-height: 40%;
+  max-height: 30%;
+  margin-top: 10rem;
   background-color: #000;
   padding: 5rem 0;
 }
-.footer__logo img {
-  margin-bottom: 2rem;
+.footer {
+  grid-template-columns: repeat(5, 1fr);
 }
 .footer__logo p {
-  opacity: 0.5;
-  font-size: 1.3rem;
-}
-#footer h3 {
+  font-size: 1.5rem;
+  color: var(--gray-color);
   font-weight: 500;
-  font-size: 1.7rem;
-  margin-bottom: 1.5rem;
+  line-height: 2.5rem;
 }
-#footer a {
-  font-size: 1.4rem;
-  opacity: 0.8;
-  line-height: 4rem;
-  transition: var(--transition);
+.footer__header {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.9rem;
 }
-#footer a:hover{
-    color: var(--secondary-color);
+.footer__links {
+  line-height: 2.5rem;
 }
-.footer__logo,
-.footer__subscribe,
-.footer__company,
-.footer__resources {
-  align-self: flex-start;
+.footer__links a {
+  color: var(--gray-color);
+  font-weight: 600;
+}
+.footer__links a:hover {
+  color: var(--light-color);
 }
 .footer__subscribe form {
-  border: 2px solid var(--card-color);
-  border-radius: 1.5rem;
-  padding-left: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  border: 1px solid var(--gray-color);
+  border-radius: var(--border-radius-s);
+  overflow: hidden;
+  width: 100%;
 }
-.footer__subscribe input {
+.footer__subscribe form input {
   background-color: transparent;
-  border: none;
-  outline: none;
-  color: #fff;
-}
-.footer__subscribe input ::placeholder {
-  color: var(--card-color);
-}
-.footer__subscribe #email__icon {
-  display: inline-block;
-  background-color: var(--secondary-color);
-  color: #fff;
-  padding: 1.5rem;
-  border-radius: 0 1rem 1rem 0;
-  font-size: 2rem;
-  margin-left: 2rem;
-}
-.subscribe__links {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.subscribe__links i {
-  background-color: var(--card-color);
   padding: 1rem;
-  border-radius: 1rem;
+  border: none;
+  color: var(--light-color);
+  outline: none;
   font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 0;
+}
+.footer__subscribe input::placeholder {
+  font-size: 1.5rem;
+  color: var(--gray-color);
+  font-family: inherit;
+  font-weight: 500;
+}
+.footer__subscribe button {
+  background-color: var(--card-color);
+  color: var(--light-color);
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius-xs);
+  border: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 2rem;
+}
+.footer__social {
+  margin-top: 2rem;
+}
+.footer__social i {
+  background-color: var(--card-color);
+  padding: 3%;
+  font-size: 1.9rem;
+  border-radius: var(--border-radius-xs);
+  text-align: center;
+  vertical-align: middle;
   transition: var(--transition);
 }
-.subscribe__links i:hover {
-  background-color: var(--secondary-color);
+.footer__social i:hover {
+  border-radius: var(--border-radius-lg);
 }
