@@ -1,3 +1,4 @@
+//slider
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -23,7 +24,7 @@ loadmore.addEventListener("click", (e) => {
     if (elementList[i]) {
       elementList[i].style.display = "block";
     }
-    console.log(elementList)
+    console.log(elementList);
   }
   currentItems += 4;
 
@@ -32,3 +33,5 @@ loadmore.addEventListener("click", (e) => {
     event.target.style.display = "none";
   }
 });
+
+

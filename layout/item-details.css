@@ -1,0 +1,112 @@
+@import "./buttons.css";
+@import "./colors.css";
+@import "./header.css";
+@import "./reset.css";
+@import "./utility.css";
+
+#header__item {
+  padding-top: 1rem;
+  background-image: url("../images/detaile/img_bg_page_title_dark.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title__page {
+  padding: 5rem 0;
+}
+.title__page h1 {
+  font-size: 4.5rem;
+  line-height: 6rem;
+}
+.title__page ul li a {
+  display: inline-block;
+  color: var(--gray-color-2);
+  padding: 0 0.3rem;
+}
+.item__detailes {
+  padding: 10rem 0;
+  justify-content: flex-start;
+}
+.item__detailes h2 {
+  align-self: flex-start;
+}
+.item__detailes__text,
+.item__detailes__text__linkes {
+  width: 100%;
+}
+.item__detailes__img {
+  width: 100%;
+}
+.item__detailes__img img {
+  border-radius: var(--border-radius-s);
+  width: 100%;
+}
+.item__detailes__text__profiles {
+  width: 100%;
+}
+.item__detailes__text__profile {
+  background-color: var(--card-color);
+  padding: 1rem;
+  border-radius: var(--border-radius-m);
+  width: 100%;
+}
+.item__detailes__text__profile img {
+  width: 5rem;
+  border-radius: var(--border-radius-m);
+}
+.item__detailes__text__profile__avatar__text {
+  width: 100%;
+}
+.item__detailes__text__profile__avatar__text span {
+  align-self: flex-start;
+}
+.item__detailes__text__profile__avatar__text > span:nth-child(1) {
+  font-size: 1.2rem;
+  color: var(--gray-color-2);
+  line-height: 2rem;
+}
+.item__detailes__text__profile__avatar__text > span:nth-child(2) {
+  font-size: 1.34rem;
+  font-weight: 500;
+}
+.item__detailes__text__p p {
+  font-size: 1.4rem;
+  color: var(--gray-color-2);
+  line-height: 2.5rem;
+}
+.item__detailes__text__bid {
+  width: 100%;
+}
+.item__detailes__text__bid__price,
+.item__detailes__text__bid__timer {
+  background-color: var(--card-color);
+  border-radius: var(--border-radius-m);
+  padding: 1.5rem 1.1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.item__detailes__text__bid__price span {
+  color: var(--gray-color-2);
+}
+.item__detailes__text__btn {
+  width: 100%;
+}
+.item__detailes__text__btn .btn {
+  width: 100%;
+}
+.item__detailes__text__tabs {
+  width: 100%;
+}
+.item__detailes__text__tabs .tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-color-2);
+  padding-bottom: 1rem;
+}
+.item__detailes__text__tabs .tab button {
+  border: 0;
+  background-color: transparent;
+  color: var(--light-color-2);
+  font-size: 1.6rem;
+}
