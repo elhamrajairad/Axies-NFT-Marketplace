@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/header/favicon-32x32.png" type="image/x-icon">
+    <!-- icon links - start -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- icon links - end -->
+    <!-- Link Swiper's CSS - start -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS - end -->
+    <!-- links styles - start -->
+    <link rel="stylesheet" href="../layout/header.css">
+    <link rel="stylesheet" href="../layout/footer.css">
+    <link rel="stylesheet" href="../layout/edit-profile.css">
+    <link rel="stylesheet" href="../layout/auctions.css">
+    <link rel="stylesheet" href="../layout/footer.css">
+    <link rel="stylesheet" href="../layout/top-button.css">
+    <!-- links styles - end -->
+    <title>Axies NFT Marketplace - Edit Profile</title>
+</head>
+
+<body>
+    <header id="header__item">
+        <div class="container">
+            <div class="header flex flex-direction-row justify-content-space-between">
+                <div class="header__logo">
+                    <img src="../images/header/logo_dark.png" alt="logo">
+                </div>
+                <div class="header__nav">
+                    <ul class="navbar flex flex-direction-row justify-content-space-around">
+                        <li class="navbar__item item"><a class="navbar__links" href="/">Home <span></span></a></li>
+                        <li class="navbar__item item"><a class="navbar__links" href="#">Explore <span></span></a></li>
+                        <li class="navbar__item item"><a class="navbar__links" href="#">Activity <span></span></a></li>
+                        <li class="navbar__item item"><a class="navbar__links" href="#">Community <span></span></a></li>
+                        <li class="navbar__item item"><a class="navbar__links" href="#">Pages <span></span></a>
+                            <ul class="submenu">
+                                <li class="subitem"><a href="./login.html">log in</a></li>
+                                <li class="subitem"><a href="./item-details.html">Item</a></li>
+                                <li class="subitem"><a href="./edite-profile.html">Edit</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item"><a class="navbar__links" href="#">Contact <span></span></a></li>
+                    </ul>
+                </div>
+                <div class="header__wallet">
+                    <div class="wallet__items flex flex-direction-row justify-content-space-around gap-2">
+                        <i class="ri-search-2-line"></i>
+                        <button class="btn">
+                            Wallet connect
+                        </button>
+                    </div>
+                </div>
+                <div class="header__changeThem">
+                    <i class="ri-sun-line"></i>
+                </div>
+            </div>
+        </div>
+        <section id="title__page">
+            <div class="container">
+                <div class="title__page flex flex-direction-column justify-content-space-around">
+                    <h1>Edit Profile</h1>
+                    <ul class="flex flex-direction-row justify-content-space-around">
+                        <li><a href="/">Home /</a></li>
+                        <li><a href="/">Explore /</a></li>
+                        <li><a href="/pages/item-details.html">Edit Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="edit-profile">
+            <div class="container">
+                <div class="edite-profile flex flex-direction-row justify-content-space-between with-100 gap-5">
+                    <div class="edite-profile__img">
+                        <div
+                            class="edite-profile__img__card flex flex-direction-column  gap-1 justify-content-space-around">
+                            <img src="../images/avatar/avata_profile.a8b9ea292396d6fac4fd.jpg" alt="avatar">
+                            <button class="btn with-100 flex flex-direction-row justify-content-center gap-1">
+                                <i class="ri-upload-cloud-line"></i>
+                                Upload New Profile
+                            </button>
+                            <button class="btn with-100 flex flex-direction-row justify-content-center gap-1">
+                                <i class="ri-delete-bin-6-fill"></i>
+                                Delete Profile</button>
+                        </div>
+                    </div>
+                    <div class="edite-profile__forms with-100 flex flex-direction-column">
+                        <h2 class="heading">Choice your Cover image </h2>
+                        <div class="edite-profile__forms__covers gride gap-1">
+                            <div class="edite-profile__forms__cover flex flex-direction-column gap-1">
+                                <button class="btn">Upload File</button>
+                                <small class="gray--text">or Drop your file here</small>
+                            </div>
+                            <div class="edite-profile__forms__cover">
+                                <img src="../images/avatar/option1_bg_profile.ed388b8ca316a6f98759.jpg" alt="">
+                            </div>
+                            <div class="edite-profile__forms__cover">
+                                <img src="../images/avatar/option2_bg_profile.a0809e05fdbbab448888.jpg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="edite-profile__forms__account flex flex-direction-row  gap-4 with-100">
+                            <div class="edite-profile__forms__account__info with-100">
+                                <h3 class="edite-profile__forms__account__heading">Account info</h3>
+                                <form class="flex flex-direction-column justify-content-start gap-1">
+                                    <label for="name">Display name</label>
+                                    <input type="text" name="name" id="name" placeholder="Jon Doe">
+                                    <label for="url">Custom URL</label>
+                                    <input type="url" name="url" id="url" placeholder="www.google.com">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="email@gmail.com">
+                                    <label for="bio">Bio</label>
+                                    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                                    <button class="btn">Upload Profile File</button>
+                                </form>
+                            </div>
+                            <div
+                                class="edite-profile__forms__account__media flex flex-direction-column justify-content-start gap-1 with-100">
+                                <h3 class="edite-profile__forms__account__heading">Your Social media</h3>
+                                <div class="facebook with-100">
+                                    <label for="facebook">Facebook</label>
+                                    <input type="text" name="facebook" placeholder="Facebook username">
+                                    <button class="btn flex flex-direction-row justify-content-space-around gap-1">
+                                        <i class="ri-facebook-fill"></i>
+                                        <p>Connect to Facebook</p>
+                                    </button>
+                                </div>
+                                <div class="twitter with-100">
+                                    <label for="twitter">Twitter</label>
+                                    <input type="text" name="twitter" placeholder="Twitter username">
+                                    <button class="btn flex flex-direction-row justify-content-space-around gap-1">
+                                        <i class="ri-twitter-fill"></i>
+                                        <p>Connect to Twitter</p>
+                                    </button>
+                                </div>
+                                <div class="discord with-100">
+                                    <label for="discord">Discord</label>
+                                    <input type="text" name="discord" placeholder="Discord username">
+                                    <button class="btn flex flex-direction-row justify-content-space-around gap-1">
+                                        <i class="ri-discord-fill"></i>
+                                        <p>Connect to Discord</p>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" style="margin-top: 0;padding-top: 10rem;">
+        <div class="container">
+            <div class="footer gride gap-3">
+                <div class="footer__logo">
+                    <img src="../images/header/logo_dark.png" alt="Axies logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non adipiscing consectetur
+                        phasellus nunc nunc vel.</p>
+                </div>
+                <div class="footer__account">
+                    <h4 class="footer__header">My Account</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Authors</a></li>
+                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Authors Profile</a></li>
+                        <li><a href="#">Create Item</a></li>
+                    </ul>
+                </div>
+                <div class="footer__resources">
+                    <h4 class="footer__header">Resources</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Live Autctions</a></li>
+                        <li><a href="#">Item Details</a></li>
+                        <li><a href="#">Activity</a></li>
+                    </ul>
+                </div>
+                <div class="footer__company">
+                    <h4 class="footer__header">Company</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h4 class="footer__header">Company</h4>
+                    <form class="flex flex-direction-row justify-content-space-between">
+                        <input type="email" id="emai" placeholder="Enter Your Email">
+                        <button><i class="ri-send-plane-fill"></i></button>
+                    </form>
+                    <div class="footer__social flex flex-direction-row justify-content-start gap-1">
+                        <i class="ri-twitter-fill"></i>
+                        <i class="ri-facebook-fill"></i>
+                        <i class="ri-send-plane-fill"></i>
+                        <i class="ri-youtube-fill"></i>
+                        <i class="ri-instagram-fill"></i>
+                        <i class="ri-discord-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#">
+        <div id="top__btn">
+            <i class="ri-arrow-up-s-line"></i>
+        </div>
+    </a>
+    <div class="social__stiky flex flex-direction-column">
+        <i class="ri-twitter-fill"></i>
+        <i class="ri-facebook-fill"></i>
+        <i class="ri-send-plane-fill"></i>
+        <i class="ri-youtube-fill"></i>
+        <i class="ri-instagram-fill"></i>
+        <i class="ri-discord-fill"></i>
+    </div>
+</body>
+
+</html>

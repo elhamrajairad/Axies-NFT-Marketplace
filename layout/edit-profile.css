@@ -1,0 +1,90 @@
+@import "./buttons.css";
+@import "./colors.css";
+@import "./header.css";
+@import "./reset.css";
+@import "./utility.css";
+@import "./item-details.css";
+#edit-profile {
+  max-height: 50%;
+  padding: 7rem 0;
+}
+
+.edite-profile {
+  align-items: flex-start !important;
+}
+.edite-profile .btn{
+    font-size: 1.4rem;
+}
+.edite-profile__img__card {
+  background-color: var(--card-color);
+  padding: 2rem;
+  border-radius: var(--border-radius-m);
+  width: 35rem;
+}
+.edite-profile__img__card img {
+  width: 30rem;
+  border-radius: var(--border-radius-m);
+}
+.edite-profile__forms {
+  align-items: flex-start !important;
+}
+.edite-profile__forms__cover {
+  border-radius: var(--border-radius-s);
+  border: 0.2rem solid var(--card-color);
+  overflow: hidden;
+  padding: 0;
+}
+.edite-profile__forms__account{
+    align-items: flex-start!important;
+}
+.edite-profile__forms__covers {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0;
+}
+.edite-profile__forms__covers > div:nth-child(1) {
+  border-style: dashed;
+  padding: 1.2rem 0;
+}
+.edite-profile__forms__cover img {
+  border-radius: var(--border-radius-s);
+  transform: scale(1.1);
+}
+.edite-profile__forms__account__info form{
+    align-items: flex-start;
+}
+.edite-profile__forms__account__info form label,.edite-profile__forms__account__media label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.edite-profile__forms__account__info form input,.edite-profile__forms__account__media input{
+    background-color: transparent;
+    border: 0.2rem solid var(--card-color);
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: var(--border-radius-xs);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.edite-profile__forms__account__media{
+    align-items: flex-start;
+}
+.edite-profile__forms__account__media div{
+    margin-bottom: 1rem;
+}
+.edite-profile__forms__account__info form textarea{
+    background-color: transparent;
+    border: 0.2rem solid var(--card-color);
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: var(--border-radius-xs);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.edite-profile__forms__account__heading{
+    align-self: flex-start;
+    margin-bottom: 3rem;
+}
+.edite-profile__forms__account__media label{
+margin-bottom: 0.5rem;
+}

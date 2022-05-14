@@ -32,6 +32,9 @@
 .gap-4 {
   gap: 4rem;
 }
+.gap-5 {
+  gap: 5rem;
+}
 
 .gride {
   display: grid;
