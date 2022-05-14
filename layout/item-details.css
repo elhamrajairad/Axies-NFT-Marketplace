@@ -12,11 +12,12 @@
   background-repeat: no-repeat;
 }
 .title__page {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 .title__page h1 {
-  font-size: 4.5rem;
-  line-height: 6rem;
+  font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 500;
 }
 .title__page ul li a {
   display: inline-block;
