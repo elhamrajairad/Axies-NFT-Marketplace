@@ -10,7 +10,7 @@
   background-color: var(--primary-color);
   padding: 0.8%;
   position: fixed;
-  bottom: 10rem;
+  bottom: 5rem;
   right: 2rem;
 }
 #top__btn i {

@@ -26,6 +26,7 @@
 .item__detailes {
   padding: 10rem 0;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 .item__detailes h2 {
   align-self: flex-start;
@@ -109,4 +110,28 @@
   background-color: transparent;
   color: var(--light-color-2);
   font-size: 1.6rem;
+}
+.tabcontent {
+  overflow-y: scroll;
+  height: 17rem;
+}
+.tabcontent__items {
+  padding: 1rem;
+}
+
+.tabcontent__item img {
+  width: 4.5rem;
+  border-radius: var(--border-radius-s);
+}
+
+.tabcontent::-webkit-scrollbar{
+  width: 0.2rem;
+  background-color:var(--gray-color);
+}
+.tabcontent::-webkit-scrollbar-thumb{
+  background-color: var(--light-color);
+}
+#Tokyo p{
+padding:1rem;
+line-height: 2.3rem;
 }

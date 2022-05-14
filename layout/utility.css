@@ -48,10 +48,26 @@
   background-color: #000;
   display: inline-flex;
   align-items: center;
-  padding:0.6rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: var(--border-radius-lg);
   font-size: 1.5rem;
 }
-.badge i{
+.badge i {
   margin-right: 0.5rem;
+}
+.with-100 {
+  width: 100%;
+}
+.gray--text {
+  font-weight: 500;
+  color: var(--gray-color-2);
+  font-size: 1.3rem;
+}
+.white__text {
+  font-weight: 500;
+  color: var(--light-color);
+  font-size: 1.6rem;
+}
+.end__child{
+  margin-left: auto;
 }
