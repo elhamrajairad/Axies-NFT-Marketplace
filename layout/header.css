@@ -69,11 +69,29 @@
   display: none;
   transition: var(--transition);
 }
-.submenu li a{
+.submenu li a {
   display: block;
   width: 100%;
-  padding:1rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
-.item:hover >.submenu{
+.item:hover > .submenu {
   display: block;
+}
+/* sticky menu */
+.sticky {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  gap: 2rem;
+  /* width: 70%; */
+  left: 15rem;
+  right: 15rem;
+  z-index: 100;
+  transition: var(--transition);
+  margin: 0.5rem auto;
+  background-color: var(--dark-color);
+  padding:0.5rem 3rem;
+  border: 1px solid var(--card-color);
+  border-radius: var(--border-radius-s);
+  box-shadow: 0 0 0.5rem 0 var(--gray-color);
 }
