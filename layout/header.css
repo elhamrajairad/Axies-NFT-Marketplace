@@ -90,8 +90,39 @@
   transition: var(--transition);
   margin: 0.5rem auto;
   background-color: var(--dark-color);
-  padding:0.5rem 3rem;
+  padding: 0.5rem 3rem;
   border: 1px solid var(--card-color);
   border-radius: var(--border-radius-s);
   box-shadow: 0 0 0.5rem 0 var(--gray-color);
+}
+#search-box-form {
+  background-color: var(--light-color);
+  padding: 0 2rem;
+  transition: var(--transition);
+  display: none;
+}
+#search {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: var(--border-radius-xs);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+#search::placeholder {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray-color);
+}
+#search-box-form a {
+  text-align: center;
+  padding: 1rem 1.2rem;
+  color: var(--gray-color);
+  font-size: 2rem;
+}
+#search-box-form a i {
+  font-size: 2rem;
+  color: var(--gray-color);
 }

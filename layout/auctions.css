@@ -43,10 +43,11 @@
 }
 .card__img__timer {
   background-color: var(--card-color);
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   bottom: 1rem;
-  right: 8rem;
+  right: 25%;
+  left: 25%;
 }
 .card__img__timer i {
   color: var(--primary-color);
@@ -54,15 +55,16 @@
 .card__img__hover {
   position: absolute;
   top: 150%;
-  padding:0.7rem 1rem;
+  padding: 0.7rem 1rem;
   background-color: var(--light-color);
   color: var(--dark-color);
-  left: 9rem;
   font-weight: 500;
   border-radius: var(--border-radius-s);
   transition: var(--transition);
+  right: 32%;
+  left: 32%;
 }
-.card:hover .card__img__hover{
+.card:hover .card__img__hover {
   top: 50%;
   visibility: visible;
 }
@@ -124,6 +126,7 @@
   border-radius: var(--border-radius-s);
 }
 /* slider */
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
   color: var(--primary-color);
 }

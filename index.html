@@ -51,7 +51,9 @@
                 </div>
                 <div class="header__wallet">
                     <div class="wallet__items flex flex-direction-row justify-content-space-around gap-2">
-                        <i class="ri-search-2-line"></i>
+                        <div class="header__wallet__search">
+                            <i class="ri-search-2-line"></i>
+                        </div>
                         <button class="btn">
                             Wallet connect
                         </button>
@@ -63,6 +65,16 @@
             </div>
         </div>
     </header>
+    <div class="container">
+        <div id="search-box-form" class="flex-direction-row justify-content-space-between">
+            <input type="text" name="search" id="search" placeholder="Search Your World...">
+            <a href="#">
+                <i class="ri-search-2-line"></i>
+            </a>
+
+        </div>
+    </div>
+
     <section id="hero">
         <div class="container">
             <div class="hero flex flex-direction-row justify-content-space-between">
@@ -982,6 +994,7 @@
     <script src="./script/timer.js"></script>
     <script src="./script/load-more.js"></script>
     <script src="./script/sticky.js"></script>
+    <script src="./script/search.js"></script>
 </body>
 
 </html>
